@@ -1,0 +1,1599 @@
+<style>@page {
+  size: A4 portrait;
+  margin: 0.5in;
+}
+
+body {
+  display: flex;
+}
+
+.left-part {
+  flex: 1;
+}
+
+.right-part {
+  flex: 1;
+  border-left: 2px solid black; /* Increase border thickness */
+  padding-left: 10px;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+</style>
+<div><div><h2>94.Binary Tree Inorder Traversal</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the inorder traversal of its nodes&#39; values</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" style="width: 125px; height: 200px;" />
+<pre>
+<strong>Input:</strong> root = [1,null,2,3]
+<strong>Output:</strong> [1,3,2]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [1]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>102.Binary Tree Level Order Traversal</h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, return <em>the level order traversal of its nodes&#39; values</em>. (i.e., from left to right, level by level).</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg" style="width: 277px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
+<strong>Output:</strong> [[3],[9,20],[15,7]]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [[1]]
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<vector<int>> levelOrder(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>145.Binary Tree Postorder Traversal</h2><h3>Easy</h3><p>Given the <code>root</code> of a&nbsp;binary tree, return <em>the postorder traversal of its nodes&#39; values</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/08/28/pre1.jpg" style="width: 127px; height: 200px;" />
+<pre>
+<strong>Input:</strong> root = [1,null,2,3]
+<strong>Output:</strong> [3,2,1]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [1]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of the nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>144.Binary Tree Preorder Traversal</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the preorder traversal of its nodes&#39; values</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/15/inorder_1.jpg" style="width: 125px; height: 200px;" />
+<pre>
+<strong>Input:</strong> root = [1,null,2,3]
+<strong>Output:</strong> [1,2,3]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [1]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<p><strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>775.N-ary Tree Preorder Traversal</h2><h3>Easy</h3><p>Given the <code>root</code> of an n-ary tree, return <em>the preorder traversal of its nodes&#39; values</em>.</p>
+<p>Nary-Tree input serialization is represented in their level order traversal. Each group of children is separated by the null value (See examples)</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png" style="width: 100%; max-width: 300px;" /></p>
+<pre>
+<strong>Input:</strong> root = [1,null,3,2,4,null,5,6]
+<strong>Output:</strong> [1,3,5,6,2,4]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2019/11/08/sample_4_964.png" style="width: 296px; height: 241px;" /></p>
+<pre>
+<strong>Input:</strong> root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+<strong>Output:</strong> [1,2,3,6,7,11,14,4,8,12,5,9,13,10]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
+	<li><code>0 &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
+	<li>The height of the n-ary tree is less than or equal to <code>1000</code>.</li>
+</ul>
+
+<p><strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    vector<Node*> children;
+
+    Node() {}
+
+    Node(int _val) {
+        val = _val;
+    }
+
+    Node(int _val, vector<Node*> _children) {
+        val = _val;
+        children = _children;
+    }
+};
+*/
+
+class Solution {
+public:
+    vector<int> preorder(Node* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>655.Print Binary Tree</h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, construct a <strong>0-indexed</strong> <code>m x n</code> string matrix <code>res</code> that represents a <strong>formatted layout</strong> of the tree. The formatted layout matrix should be constructed using the following rules:</p>
+<ul>
+	<li>The <strong>height</strong> of the tree is <code>height</code>&nbsp;and the number of rows <code>m</code> should be equal to <code>height + 1</code>.</li>
+	<li>The number of columns <code>n</code> should be equal to <code>2<sup>height+1</sup> - 1</code>.</li>
+	<li>Place the <strong>root node</strong> in the <strong>middle</strong> of the <strong>top row</strong> (more formally, at location <code>res[0][(n-1)/2]</code>).</li>
+	<li>For each node that has been placed in the matrix at position <code>res[r][c]</code>, place its <strong>left child</strong> at <code>res[r+1][c-2<sup>height-r-1</sup>]</code> and its <strong>right child</strong> at <code>res[r+1][c+2<sup>height-r-1</sup>]</code>.</li>
+	<li>Continue this process until all the nodes in the tree have been placed.</li>
+	<li>Any empty cells should contain the empty string <code>&quot;&quot;</code>.</li>
+</ul>
+<p>Return <em>the constructed matrix </em><code>res</code>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/05/03/print1-tree.jpg" style="width: 141px; height: 181px;" />
+<pre>
+<strong>Input:</strong> root = [1,2]
+<strong>Output:</strong> 
+[[&quot;&quot;,&quot;1&quot;,&quot;&quot;],
+&nbsp;[&quot;2&quot;,&quot;&quot;,&quot;&quot;]]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/05/03/print2-tree.jpg" style="width: 207px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,null,4]
+<strong>Output:</strong> 
+[[&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;1&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;],
+&nbsp;[&quot;&quot;,&quot;2&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;3&quot;,&quot;&quot;],
+&nbsp;[&quot;&quot;,&quot;&quot;,&quot;4&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;]]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 2<sup>10</sup>]</code>.</li>
+	<li><code>-99 &lt;= Node.val &lt;= 99</code></li>
+	<li>The depth of the tree will be in the range <code>[1, 10]</code>.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<vector<string>> printTree(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>98.Validate Binary Search Tree</h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, <em>determine if it is a valid binary search tree (BST)</em>.</p>
+<p>A <strong>valid BST</strong> is defined as follows:</p>
+<ul>
+	<li>The left <span data-keyword="subtree">subtree</span> of a node contains only nodes with keys <strong>less than</strong> the node&#39;s key.</li>
+	<li>The right subtree of a node contains only nodes with keys <strong>greater than</strong> the node&#39;s key.</li>
+	<li>Both the left and right subtrees must also be binary search trees.</li>
+</ul>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/01/tree1.jpg" style="width: 302px; height: 182px;" />
+<pre>
+<strong>Input:</strong> root = [2,1,3]
+<strong>Output:</strong> true
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/01/tree2.jpg" style="width: 422px; height: 292px;" />
+<pre>
+<strong>Input:</strong> root = [5,1,4,null,null,3,6]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> The root node&#39;s value is 5 but its right child&#39;s value is 4.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool isValidBST(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>100.Same Tree</h2><h3>Easy</h3><p>Given the roots of two binary trees <code>p</code> and <code>q</code>, write a function to check if they are the same or not.</p>
+<p>Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg" style="width: 622px; height: 182px;" />
+<pre>
+<strong>Input:</strong> p = [1,2,3], q = [1,2,3]
+<strong>Output:</strong> true
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg" style="width: 382px; height: 182px;" />
+<pre>
+<strong>Input:</strong> p = [1,2], q = [1,null,2]
+<strong>Output:</strong> false
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg" style="width: 622px; height: 182px;" />
+<pre>
+<strong>Input:</strong> p = [1,2,1], q = [1,1,2]
+<strong>Output:</strong> false
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in both trees is in the range <code>[0, 100]</code>.</li>
+	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>101.Symmetric Tree</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, <em>check whether it is a mirror of itself</em> (i.e., symmetric around its center).</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg" style="width: 354px; height: 291px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,2,3,4,4,3]
+<strong>Output:</strong> true
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg" style="width: 308px; height: 258px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,2,null,3,null,3]
+<strong>Output:</strong> false
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 1000]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<strong>Follow up:</strong> Could you solve it both recursively and iteratively?/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool isSymmetric(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>104.Maximum Depth of Binary Tree</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
+<p>A binary tree&#39;s <strong>maximum depth</strong>&nbsp;is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg" style="width: 400px; height: 277px;" />
+<pre>
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
+<strong>Output:</strong> 3
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1,null,2]
+<strong>Output:</strong> 2
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int maxDepth(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>784.Insert into a Binary Search Tree</h2><h3>Medium</h3><p>You are given the <code>root</code> node of a binary search tree (BST) and a <code>value</code> to insert into the tree. Return <em>the root node of the BST after the insertion</em>. It is <strong>guaranteed</strong> that the new value does not exist in the original BST.</p>
+<p><strong>Notice</strong>&nbsp;that there may exist&nbsp;multiple valid ways for the&nbsp;insertion, as long as the tree remains a BST after insertion. You can return <strong>any of them</strong>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/05/insertbst.jpg" style="width: 752px; height: 221px;" />
+<pre>
+<strong>Input:</strong> root = [4,2,7,1,3], val = 5
+<strong>Output:</strong> [4,2,7,1,3,5]
+<strong>Explanation:</strong> Another accepted tree is:
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/05/bst.jpg" style="width: 352px; height: 301px;" />
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [40,20,60,10,30,50,70], val = 25
+<strong>Output:</strong> [40,20,60,10,30,50,70,null,null,25]
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = [4,2,7,1,3,null,null,null,null,null,null], val = 5
+<strong>Output:</strong> [4,2,7,1,3,5]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in&nbsp;the tree will be in the range <code>[0,&nbsp;10<sup>4</sup>]</code>.</li>
+	<li><code>-10<sup>8</sup> &lt;= Node.val &lt;= 10<sup>8</sup></code></li>
+	<li>All the values <code>Node.val</code> are <strong>unique</strong>.</li>
+	<li><code>-10<sup>8</sup> &lt;= val &lt;= 10<sup>8</sup></code></li>
+	<li>It&#39;s <strong>guaranteed</strong> that <code>val</code> does not exist in the original BST.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* insertIntoBST(TreeNode* root, int val) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>108.Convert Sorted Array to Binary Search Tree</h2><h3>Easy</h3><p>Given an integer array <code>nums</code> where the elements are sorted in <strong>ascending order</strong>, convert <em>it to a </em><span data-keyword="height-balanced"><strong><em>height-balanced</em></strong></span> <em>binary search tree</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/btree1.jpg" style="width: 302px; height: 222px;" />
+<pre>
+<strong>Input:</strong> nums = [-10,-3,0,5,9]
+<strong>Output:</strong> [0,-3,9,-10,null,5]
+<strong>Explanation:</strong> [0,-10,5,null,-3,null,9] is also accepted:
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/btree2.jpg" style="width: 302px; height: 222px;" />
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/btree.jpg" style="width: 342px; height: 142px;" />
+<pre>
+<strong>Input:</strong> nums = [1,3]
+<strong>Output:</strong> [3,1]
+<strong>Explanation:</strong> [1,null,3] and [3,1] are both height-balanced BSTs.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
+	<li><code>nums</code> is sorted in a <strong>strictly increasing</strong> order.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>110.Balanced Binary Tree</h2><h3>Easy</h3><p>Given a binary tree, determine if it is <span data-keyword="height-balanced"><strong>height-balanced</strong></span>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg" style="width: 342px; height: 221px;" />
+<pre>
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
+<strong>Output:</strong> true
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg" style="width: 452px; height: 301px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,2,3,3,null,null,4,4]
+<strong>Output:</strong> false
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> true
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 5000]</code>.</li>
+	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool isBalanced(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>112.Path Sum</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree and an integer <code>targetSum</code>, return <code>true</code> if the tree has a <strong>root-to-leaf</strong> path such that adding up all the values along the path equals <code>targetSum</code>.</p>
+<p>A <strong>leaf</strong> is a node with no children.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/18/pathsum1.jpg" style="width: 500px; height: 356px;" />
+<pre>
+<strong>Input:</strong> root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
+<strong>Output:</strong> true
+<strong>Explanation:</strong> The root-to-leaf path with the target sum is shown.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/18/pathsum2.jpg" />
+<pre>
+<strong>Input:</strong> root = [1,2,3], targetSum = 5
+<strong>Output:</strong> false
+<strong>Explanation:</strong> There two root-to-leaf paths in the tree:
+(1 --&gt; 2): The sum is 3.
+(1 --&gt; 3): The sum is 4.
+There is no root-to-leaf path with sum = 5.
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = [], targetSum = 0
+<strong>Output:</strong> false
+<strong>Explanation:</strong> Since the tree is empty, there are no root-to-leaf paths.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 5000]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+	<li><code>-1000 &lt;= targetSum &lt;= 1000</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool hasPathSum(TreeNode* root, int targetSum) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>226.Invert Binary Tree</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, invert the tree, and return <em>its root</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg" style="width: 500px; height: 165px;" />
+<pre>
+<strong>Input:</strong> root = [4,2,7,1,3,6,9]
+<strong>Output:</strong> [4,7,2,9,6,3,1]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg" style="width: 500px; height: 120px;" />
+<pre>
+<strong>Input:</strong> root = [2,1,3]
+<strong>Output:</strong> [2,3,1]
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>257.Binary Tree Paths</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>all root-to-leaf paths in <strong>any order</strong></em>.</p>
+<p>A <strong>leaf</strong> is a node with no children.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/12/paths-tree.jpg" style="width: 207px; height: 293px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,null,5]
+<strong>Output:</strong> [&quot;1-&gt;2-&gt;5&quot;,&quot;1-&gt;3&quot;]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [&quot;1&quot;]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<string> binaryTreePaths(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>543.Diameter of Binary Tree</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the length of the <strong>diameter</strong> of the tree</em>.</p>
+<p>The <strong>diameter</strong> of a binary tree is the <strong>length</strong> of the longest path between any two nodes in a tree. This path may or may not pass through the <code>root</code>.</p>
+<p>The <strong>length</strong> of a path between two nodes is represented by the number of edges between them.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/06/diamtree.jpg" style="width: 292px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,4,5]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> 3 is the length of the path [4,2,1,3] or [5,2,1,3].
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1,2]
+<strong>Output:</strong> 1
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int diameterOfBinaryTree(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>617.Merge Two Binary Trees</h2><h3>Easy</h3><p>You are given two binary trees <code>root1</code> and <code>root2</code>.</p>
+<p>Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.</p>
+<p>Return <em>the merged tree</em>.</p>
+<p><strong>Note:</strong> The merging process must start from the root nodes of both trees.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/05/merge.jpg" style="width: 600px; height: 163px;" />
+<pre>
+<strong>Input:</strong> root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
+<strong>Output:</strong> [3,4,5,5,4,null,7]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root1 = [1], root2 = [1,2]
+<strong>Output:</strong> [2,2]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in both trees is in the range <code>[0, 2000]</code>.</li>
+	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>637.Average of Levels in Binary Tree</h2><h3>Easy</h3>Given the <code>root</code> of a binary tree, return <em>the average value of the nodes on each level in the form of an array</em>. Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/09/avg1-tree.jpg" style="width: 277px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
+<strong>Output:</strong> [3.00000,14.50000,11.00000]
+Explanation: The average value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
+Hence return [3, 14.5, 11].
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/03/09/avg2-tree.jpg" style="width: 292px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [3,9,20,15,7]
+<strong>Output:</strong> [3.00000,14.50000,11.00000]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<double> averageOfLevels(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1498.Find a Corresponding Node of a Binary Tree in a Clone of That Tree</h2><h3>Easy</h3><p>Given two binary trees <code>original</code> and <code>cloned</code> and given a reference to a node <code>target</code> in the original tree.</p>
+<p>The <code>cloned</code> tree is a <strong>copy of</strong> the <code>original</code> tree.</p>
+<p>Return <em>a reference to the same node</em> in the <code>cloned</code> tree.</p>
+<p><strong>Note</strong> that you are <strong>not allowed</strong> to change any of the two trees or the <code>target</code> node and the answer <strong>must be</strong> a reference to a node in the <code>cloned</code> tree.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/02/21/e1.png" style="width: 544px; height: 426px;" />
+<pre>
+<strong>Input:</strong> tree = [7,4,3,null,null,6,19], target = 3
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> In all examples the original and cloned trees are shown. The target node is a green node from the original tree. The answer is the yellow node from the cloned tree.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/02/21/e2.png" style="width: 221px; height: 159px;" />
+<pre>
+<strong>Input:</strong> tree = [7], target =  7
+<strong>Output:</strong> 7
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/02/21/e3.png" style="width: 459px; height: 486px;" />
+<pre>
+<strong>Input:</strong> tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4
+<strong>Output:</strong> 4
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the <code>tree</code> is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li>The values of the nodes of the <code>tree</code> are unique.</li>
+	<li><code>target</code> node is a node from the <code>original</code> tree and is not <code>null</code>.</li>
+</ul>
+
+<p><strong>Follow up:</strong> Could you solve the problem if repeated values on the tree are allowed?</p>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+
+class Solution {
+public:
+    TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>96.Unique Binary Search Trees</h2><h3>Medium</h3><p>Given an integer <code>n</code>, return <em>the number of structurally unique <strong>BST&#39;</strong>s (binary search trees) which has exactly </em><code>n</code><em> nodes of unique values from</em> <code>1</code> <em>to</em> <code>n</code>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/18/uniquebstn3.jpg" style="width: 600px; height: 148px;" />
+<pre>
+<strong>Input:</strong> n = 3
+<strong>Output:</strong> 5
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> n = 1
+<strong>Output:</strong> 1
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= n &lt;= 19</code></li>
+</ul>
+class Solution {
+public:
+    int numTrees(int n) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>99.Recover Binary Search Tree</h2><h3>Medium</h3><p>You are given the <code>root</code> of a binary search tree (BST), where the values of <strong>exactly</strong> two nodes of the tree were swapped by mistake. <em>Recover the tree without changing its structure</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/28/recover1.jpg" style="width: 422px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [1,3,null,null,2]
+<strong>Output:</strong> [3,1,null,null,2]
+<strong>Explanation:</strong> 3 cannot be a left child of 1 because 3 &gt; 1. Swapping 1 and 3 makes the BST valid.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/28/recover2.jpg" style="width: 581px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [3,1,4,null,null,2]
+<strong>Output:</strong> [2,1,4,null,null,3]
+<strong>Explanation:</strong> 2 cannot be in the right subtree of 3 because 2 &lt; 3. Swapping 2 and 3 makes the BST valid.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[2, 1000]</code>.</li>
+	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
+
+<strong>Follow up:</strong> A solution using <code>O(n)</code> space is pretty straight-forward. Could you devise a constant <code>O(1)</code> space solution?/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    void recoverTree(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>111.Minimum Depth of Binary Tree</h2><h3>Easy</h3><p>Given a binary tree, find its minimum depth.</p>
+<p>The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.</p>
+<p><strong>Note:</strong>&nbsp;A leaf is a node with no children.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/12/ex_depth.jpg" style="width: 432px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
+<strong>Output:</strong> 2
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [2,null,3,null,4,null,5,null,6]
+<strong>Output:</strong> 5
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>5</sup>]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int minDepth(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>563.Binary Tree Tilt</h2><h3>Easy</h3><p>Given the <code>root</code> of a binary tree, return <em>the sum of every tree node&#39;s <strong>tilt</strong>.</em></p>
+<p>The <strong>tilt</strong> of a tree node is the <strong>absolute difference</strong> between the sum of all left subtree node <strong>values</strong> and all right subtree node <strong>values</strong>. If a node does not have a left child, then the sum of the left subtree node <strong>values</strong> is treated as <code>0</code>. The rule is similar if the node does not have a right child.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/20/tilt1.jpg" style="width: 712px; height: 182px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3]
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> 
+Tilt of node 2 : |0-0| = 0 (no children)
+Tilt of node 3 : |0-0| = 0 (no children)
+Tilt of node 1 : |2-3| = 1 (left subtree is just left child, so sum is 2; right subtree is just right child, so sum is 3)
+Sum of every tilt : 0 + 0 + 1 = 1
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/20/tilt2.jpg" style="width: 800px; height: 203px;" />
+<pre>
+<strong>Input:</strong> root = [4,2,9,3,5,null,7]
+<strong>Output:</strong> 15
+<strong>Explanation:</strong> 
+Tilt of node 3 : |0-0| = 0 (no children)
+Tilt of node 5 : |0-0| = 0 (no children)
+Tilt of node 7 : |0-0| = 0 (no children)
+Tilt of node 2 : |3-5| = 2 (left subtree is just left child, so sum is 3; right subtree is just right child, so sum is 5)
+Tilt of node 9 : |0-7| = 7 (no left child, so sum is 0; right subtree is just right child, so sum is 7)
+Tilt of node 4 : |(3+5+2)-(9+7)| = |10-16| = 6 (left subtree values are 3, 5, and 2, which sums to 10; right subtree values are 9 and 7, which sums to 16)
+Sum of every tilt : 0 + 0 + 0 + 2 + 7 + 6 = 15
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/20/tilt3.jpg" style="width: 800px; height: 293px;" />
+<pre>
+<strong>Input:</strong> root = [21,7,14,1,1,2,2,3,3]
+<strong>Output:</strong> 9
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int findTilt(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>105.Construct Binary Tree from Preorder and Inorder Traversal</h2><h3>Medium</h3><p>Given two integer arrays <code>preorder</code> and <code>inorder</code> where <code>preorder</code> is the preorder traversal of a binary tree and <code>inorder</code> is the inorder traversal of the same tree, construct and return <em>the binary tree</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/tree.jpg" style="width: 277px; height: 302px;" />
+<pre>
+<strong>Input:</strong> preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+<strong>Output:</strong> [3,9,20,null,null,15,7]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> preorder = [-1], inorder = [-1]
+<strong>Output:</strong> [-1]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= preorder.length &lt;= 3000</code></li>
+	<li><code>inorder.length == preorder.length</code></li>
+	<li><code>-3000 &lt;= preorder[i], inorder[i] &lt;= 3000</code></li>
+	<li><code>preorder</code> and <code>inorder</code> consist of <strong>unique</strong> values.</li>
+	<li>Each value of <code>inorder</code> also appears in <code>preorder</code>.</li>
+	<li><code>preorder</code> is <strong>guaranteed</strong> to be the preorder traversal of the tree.</li>
+	<li><code>inorder</code> is <strong>guaranteed</strong> to be the inorder traversal of the tree.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>106.Construct Binary Tree from Inorder and Postorder Traversal</h2><h3>Medium</h3><p>Given two integer arrays <code>inorder</code> and <code>postorder</code> where <code>inorder</code> is the inorder traversal of a binary tree and <code>postorder</code> is the postorder traversal of the same tree, construct and return <em>the binary tree</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/tree.jpg" style="width: 277px; height: 302px;" />
+<pre>
+<strong>Input:</strong> inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]
+<strong>Output:</strong> [3,9,20,null,null,15,7]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> inorder = [-1], postorder = [-1]
+<strong>Output:</strong> [-1]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= inorder.length &lt;= 3000</code></li>
+	<li><code>postorder.length == inorder.length</code></li>
+	<li><code>-3000 &lt;= inorder[i], postorder[i] &lt;= 3000</code></li>
+	<li><code>inorder</code> and <code>postorder</code> consist of <strong>unique</strong> values.</li>
+	<li>Each value of <code>postorder</code> also appears in <code>inorder</code>.</li>
+	<li><code>inorder</code> is <strong>guaranteed</strong> to be the inorder traversal of the tree.</li>
+	<li><code>postorder</code> is <strong>guaranteed</strong> to be the postorder traversal of the tree.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>114.Flatten Binary Tree to Linked List</h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, flatten the tree into a &quot;linked list&quot;:</p>
+<ul>
+	<li>The &quot;linked list&quot; should use the same <code>TreeNode</code> class where the <code>right</code> child pointer points to the next node in the list and the <code>left</code> child pointer is always <code>null</code>.</li>
+	<li>The &quot;linked list&quot; should be in the same order as a <a href="https://en.wikipedia.org/wiki/Tree_traversal#Pre-order,_NLR" target="_blank"><strong>pre-order</strong><strong> traversal</strong></a> of the binary tree.</li>
+</ul>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/14/flaten.jpg" style="width: 500px; height: 226px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,5,3,4,null,6]
+<strong>Output:</strong> [1,null,2,null,3,null,4,null,5,null,6]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = [0]
+<strong>Output:</strong> [0]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+
+<strong>Follow up:</strong> Can you flatten the tree in-place (with <code>O(1)</code> extra space)?/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    void flatten(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>199.Binary Tree Right Side View</h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, imagine yourself standing on the <strong>right side</strong> of it, return <em>the values of the nodes you can see ordered from top to bottom</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/14/tree.jpg" style="width: 401px; height: 301px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,null,5,null,4]
+<strong>Output:</strong> [1,3,4]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1,null,3]
+<strong>Output:</strong> [1,3]
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> rightSideView(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>116.Populating Next Right Pointers in Each Node</h2><h3>Medium</h3><p>You are given a <strong>perfect binary tree</strong> where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:</p>
+<pre>
+struct Node {
+  int val;
+  Node *left;
+  Node *right;
+  Node *next;
+}
+</pre>
+<p>Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to <code>NULL</code>.</p>
+<p>Initially, all next pointers are set to <code>NULL</code>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/02/14/116_sample.png" style="width: 500px; height: 171px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,4,5,6,7]
+<strong>Output:</strong> [1,#,2,3,#,4,5,6,7,#]
+<strong>Explanation: </strong>Given the above perfect binary tree (Figure A), your function should populate each next pointer to point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next pointers, with &#39;#&#39; signifying the end of each level.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 2<sup>12</sup> - 1]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+</ul>
+
+<p><strong>Follow-up:</strong></p>
+<ul>
+	<li>You may only use constant extra space.</li>
+	<li>The recursive approach is fine. You may assume implicit stack space does not count as extra space for this problem.</li>
+</ul>
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    Node* left;
+    Node* right;
+    Node* next;
+
+    Node() : val(0), left(NULL), right(NULL), next(NULL) {}
+
+    Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
+
+    Node(int _val, Node* _left, Node* _right, Node* _next)
+        : val(_val), left(_left), right(_right), next(_next) {}
+};
+*/
+
+class Solution {
+public:
+    Node* connect(Node* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1427.All Elements in Two Binary Search Trees</h2><h3>Medium</h3><p>Given two binary search trees <code>root1</code> and <code>root2</code>, return <em>a list containing all the integers from both trees sorted in <strong>ascending</strong> order</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/12/18/q2-e1.png" style="width: 457px; height: 207px;" />
+<pre>
+<strong>Input:</strong> root1 = [2,1,4], root2 = [1,0,3]
+<strong>Output:</strong> [0,1,1,2,3,4]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/12/18/q2-e5-.png" style="width: 352px; height: 197px;" />
+<pre>
+<strong>Input:</strong> root1 = [1,null,8], root2 = [8,1]
+<strong>Output:</strong> [1,1,8,8]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in each tree is in the range <code>[0, 5000]</code>.</li>
+	<li><code>-10<sup>5</sup> &lt;= Node.val &lt;= 10<sup>5</sup></code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> getAllElements(TreeNode* root1, TreeNode* root2) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>654.Maximum Binary Tree</h2><h3>Medium</h3><p>You are given an integer array <code>nums</code> with no duplicates. A <strong>maximum binary tree</strong> can be built recursively from <code>nums</code> using the following algorithm:</p>
+<ol>
+	<li>Create a root node whose value is the maximum value in <code>nums</code>.</li>
+	<li>Recursively build the left subtree on the <strong>subarray prefix</strong> to the <strong>left</strong> of the maximum value.</li>
+	<li>Recursively build the right subtree on the <strong>subarray suffix</strong> to the <strong>right</strong> of the maximum value.</li>
+</ol>
+<p>Return <em>the <strong>maximum binary tree</strong> built from </em><code>nums</code>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/24/tree1.jpg" style="width: 302px; height: 421px;" />
+<pre>
+<strong>Input:</strong> nums = [3,2,1,6,0,5]
+<strong>Output:</strong> [6,3,5,null,2,0,null,null,1]
+<strong>Explanation:</strong> The recursive calls are as follow:
+- The largest value in [3,2,1,6,0,5] is 6. Left prefix is [3,2,1] and right suffix is [0,5].
+    - The largest value in [3,2,1] is 3. Left prefix is [] and right suffix is [2,1].
+        - Empty array, so no child.
+        - The largest value in [2,1] is 2. Left prefix is [] and right suffix is [1].
+            - Empty array, so no child.
+            - Only one element, so child is a node with value 1.
+    - The largest value in [0,5] is 5. Left prefix is [0] and right suffix is [].
+        - Only one element, so child is a node with value 0.
+        - Empty array, so no child.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/24/tree2.jpg" style="width: 182px; height: 301px;" />
+<pre>
+<strong>Input:</strong> nums = [3,2,1]
+<strong>Output:</strong> [3,null,2,null,1]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
+	<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>
+	<li>All integers in <code>nums</code> are <strong>unique</strong>.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>687.Longest Univalue Path</h2><h3>Medium</h3><p>Given the <code>root</code> of a binary tree, return <em>the length of the longest path, where each node in the path has the same value</em>. This path may or may not pass through the root.</p>
+<p><strong>The length of the path</strong> between two nodes is represented by the number of edges between them.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/13/ex1.jpg" style="width: 450px; height: 238px;" />
+<pre>
+<strong>Input:</strong> root = [5,4,5,1,1,null,5]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> The shown image shows that the longest path of the same value (i.e. 5).
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/13/ex2.jpg" style="width: 450px; height: 238px;" />
+<pre>
+<strong>Input:</strong> root = [1,4,5,4,4,null,5]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> The shown image shows that the longest path of the same value (i.e. 4).
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
+	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+	<li>The depth of the tree will not exceed <code>1000</code>.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int longestUnivaluePath(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1021.Distribute Coins in Binary Tree</h2><h3>Medium</h3><p>You are given the <code>root</code> of a binary tree with <code>n</code> nodes where each <code>node</code> in the tree has <code>node.val</code> coins. There are <code>n</code> coins in total throughout the whole tree.</p>
+<p>In one move, we may choose two adjacent nodes and move one coin from one node to another. A move may be from parent to child, or from child to parent.</p>
+<p>Return <em>the <strong>minimum</strong> number of moves required to make every node have <strong>exactly</strong> one coin</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/01/18/tree1.png" style="width: 250px; height: 236px;" />
+<pre>
+<strong>Input:</strong> root = [3,0,0]
+<strong>Output:</strong> 2
+<strong>Explanation: </strong>From the root of the tree, we move one coin to its left child, and one coin to its right child.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/01/18/tree2.png" style="width: 250px; height: 236px;" />
+<pre>
+<strong>Input:</strong> root = [0,3,0]
+<strong>Output:</strong> 3
+<strong>Explanation: </strong>From the left child of the root, we move two coins to the root [taking two moves]. Then, we move one coin from the root of the tree to the right child.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is <code>n</code>.</li>
+	<li><code>1 &lt;= n &lt;= 100</code></li>
+	<li><code>0 &lt;= Node.val &lt;= n</code></li>
+	<li>The sum of all <code>Node.val</code> is <code>n</code>.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int distributeCoins(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1114.Binary Search Tree to Greater Sum Tree</h2><h3>Medium</h3><p>Given the <code>root</code> of a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus the sum of all keys greater than the original key in BST.</p>
+<p>As a reminder, a <em>binary search tree</em> is a tree that satisfies these constraints:</p>
+<ul>
+	<li>The left subtree of a node contains only nodes with keys <strong>less than</strong> the node&#39;s key.</li>
+	<li>The right subtree of a node contains only nodes with keys <strong>greater than</strong> the node&#39;s key.</li>
+	<li>Both the left and right subtrees must also be binary search trees.</li>
+</ul>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/05/02/tree.png" style="width: 400px; height: 273px;" />
+<pre>
+<strong>Input:</strong> root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
+<strong>Output:</strong> [30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [0,null,1]
+<strong>Output:</strong> [1,null,1]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 100]</code>.</li>
+	<li><code>0 &lt;= Node.val &lt;= 100</code></li>
+	<li>All the values in the tree are <strong>unique</strong>.</li>
+</ul>
+
+<p><strong>Note:</strong> This question is the same as 538: <a href="https://leetcode.com/problems/convert-bst-to-greater-tree/" target="_blank">https://leetcode.com/problems/convert-bst-to-greater-tree/</a></p>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* bstToGst(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1254.Deepest Leaves Sum</h2><h3>Medium</h3>Given the <code>root</code> of a binary tree, return <em>the sum of values of its deepest leaves</em>.
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/07/31/1483_ex1.png" style="width: 273px; height: 265px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,4,5,null,6,7,null,null,null,null,8]
+<strong>Output:</strong> 15
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = [6,7,8,2,7,1,3,9,null,1,4,null,null,null,5]
+<strong>Output:</strong> 19
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
+	<li><code>1 &lt;= Node.val &lt;= 100</code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int deepestLeavesSum(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>222.Count Complete Tree Nodes</h2><h3>Easy</h3><p>Given the <code>root</code> of a <strong>complete</strong> binary tree, return the number of the nodes in the tree.</p>
+<p>According to <strong><a href="http://en.wikipedia.org/wiki/Binary_tree#Types_of_binary_trees" target="_blank">Wikipedia</a></strong>, every level, except possibly the last, is completely filled in a complete binary tree, and all nodes in the last level are as far left as possible. It can have between <code>1</code> and <code>2<sup>h</sup></code> nodes inclusive at the last level <code>h</code>.</p>
+<p>Design an algorithm that runs in less than&nbsp;<code data-stringify-type="code">O(n)</code>&nbsp;time complexity.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/01/14/complete.jpg" style="width: 372px; height: 302px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,3,4,5,6]
+<strong>Output:</strong> 6
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> root = []
+<strong>Output:</strong> 0
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> 1
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[0, 5 * 10<sup>4</sup>]</code>.</li>
+	<li><code>0 &lt;= Node.val &lt;= 5 * 10<sup>4</sup></code></li>
+	<li>The tree is guaranteed to be <strong>complete</strong>.</li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int countNodes(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1731.Even Odd Tree</h2><h3>Medium</h3><p>A binary tree is named <strong>Even-Odd</strong> if it meets the following conditions:</p>
+<ul>
+	<li>The root of the binary tree is at level index <code>0</code>, its children are at level index <code>1</code>, their children are at level index <code>2</code>, etc.</li>
+	<li>For every <strong>even-indexed</strong> level, all nodes at the level have <strong>odd</strong> integer values in <strong>strictly increasing</strong> order (from left to right).</li>
+	<li>For every <b>odd-indexed</b> level, all nodes at the level have <b>even</b> integer values in <strong>strictly decreasing</strong> order (from left to right).</li>
+</ul>
+<p>Given the <code>root</code> of a binary tree, <em>return </em><code>true</code><em> if the binary tree is <strong>Even-Odd</strong>, otherwise return </em><code>false</code><em>.</em></p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/15/sample_1_1966.png" style="width: 362px; height: 229px;" />
+<pre>
+<strong>Input:</strong> root = [1,10,4,3,null,7,9,12,8,6,null,null,2]
+<strong>Output:</strong> true
+<strong>Explanation:</strong> The node values on each level are:
+Level 0: [1]
+Level 1: [10,4]
+Level 2: [3,7,9]
+Level 3: [12,8,6,2]
+Since levels 0 and 2 are all odd and increasing and levels 1 and 3 are all even and decreasing, the tree is Even-Odd.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/15/sample_2_1966.png" style="width: 363px; height: 167px;" />
+<pre>
+<strong>Input:</strong> root = [5,4,2,3,3,7]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> The node values on each level are:
+Level 0: [5]
+Level 1: [4,2]
+Level 2: [3,3,7]
+Node values in level 2 must be in strictly increasing order, so the tree is not Even-Odd.
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/22/sample_1_333_1966.png" style="width: 363px; height: 167px;" />
+<pre>
+<strong>Input:</strong> root = [5,9,1,3,5,7]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> Node values in the level 1 should be even integers.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>5</sup>]</code>.</li>
+	<li><code>1 &lt;= Node.val &lt;= 10<sup>6</sup></code></li>
+</ul>
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    bool isEvenOddTree(TreeNode* root) {
+        
+    }
+};</div><p style="page-break-before: always" ></p></div>
