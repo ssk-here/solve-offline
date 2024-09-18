@@ -1,7 +1,7 @@
 
 /**
 * @file number-of-islands.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/number-of-islands
 * @brief   

@@ -1,7 +1,7 @@
 
 /**
 * @file pacific-atlantic-water-flow.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/pacific-atlantic-water-flow
 * @brief   

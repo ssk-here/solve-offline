@@ -1,7 +1,7 @@
 
 /**
 * @file generate-parentheses.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/generate-parentheses
 * @brief   

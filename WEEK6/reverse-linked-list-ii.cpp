@@ -1,7 +1,7 @@
 
 /**
 * @file reverse-linked-list-ii.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/reverse-linked-list-ii
 * @brief   

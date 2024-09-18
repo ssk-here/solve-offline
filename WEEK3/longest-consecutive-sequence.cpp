@@ -1,7 +1,7 @@
 
 /**
 * @file longest-consecutive-sequence.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/longest-consecutive-sequence
 * @brief   

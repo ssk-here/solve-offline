@@ -1,7 +1,7 @@
 
 /**
 * @file house-robber-ii.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/house-robber-ii
 * @brief   

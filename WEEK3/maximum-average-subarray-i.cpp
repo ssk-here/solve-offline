@@ -1,7 +1,7 @@
 
 /**
 * @file maximum-average-subarray-i.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/maximum-average-subarray-i
 * @brief   

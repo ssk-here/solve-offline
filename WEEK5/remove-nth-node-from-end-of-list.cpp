@@ -1,7 +1,7 @@
 
 /**
 * @file remove-nth-node-from-end-of-list.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/remove-nth-node-from-end-of-list
 * @brief   

@@ -1,7 +1,7 @@
 
 /**
 * @file kth-smallest-element-in-a-sorted-matrix.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix
 * @brief   

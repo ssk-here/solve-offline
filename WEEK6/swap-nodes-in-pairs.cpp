@@ -1,7 +1,7 @@
 
 /**
 * @file swap-nodes-in-pairs.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/swap-nodes-in-pairs
 * @brief   

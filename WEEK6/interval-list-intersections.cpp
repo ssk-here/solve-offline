@@ -1,7 +1,7 @@
 
 /**
 * @file interval-list-intersections.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/interval-list-intersections
 * @brief   

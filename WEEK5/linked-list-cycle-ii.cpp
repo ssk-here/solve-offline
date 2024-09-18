@@ -1,7 +1,7 @@
 
 /**
 * @file linked-list-cycle-ii.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/linked-list-cycle-ii
 * @brief   

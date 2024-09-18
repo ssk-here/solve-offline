@@ -1,7 +1,7 @@
 
 /**
 * @file word-break.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/word-break
 * @brief   

@@ -1,7 +1,7 @@
 
 /**
 * @file partition-equal-subset-sum.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/partition-equal-subset-sum
 * @brief   

@@ -1,7 +1,7 @@
 
 /**
 * @file merge-intervals.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/merge-intervals
 * @brief   

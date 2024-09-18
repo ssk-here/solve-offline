@@ -1,7 +1,7 @@
 
 /**
 * @file add-two-numbers.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/add-two-numbers
 * @brief   

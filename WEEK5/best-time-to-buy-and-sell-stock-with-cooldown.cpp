@@ -1,7 +1,7 @@
 
 /**
 * @file best-time-to-buy-and-sell-stock-with-cooldown.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
 * @brief   

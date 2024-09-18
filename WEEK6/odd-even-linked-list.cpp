@@ -1,7 +1,7 @@
 
 /**
 * @file odd-even-linked-list.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/odd-even-linked-list
 * @brief   

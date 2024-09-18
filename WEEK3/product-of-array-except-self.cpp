@@ -1,7 +1,7 @@
 
 /**
 * @file product-of-array-except-self.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/product-of-array-except-self
 * @brief   

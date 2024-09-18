@@ -1,7 +1,7 @@
 
 /**
 * @file combination-sum-iii.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/combination-sum-iii
 * @brief   

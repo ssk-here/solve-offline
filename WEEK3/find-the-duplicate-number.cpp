@@ -1,7 +1,7 @@
 
 /**
 * @file find-the-duplicate-number.cpp
-* @author [Your Name]
+* @author Srikanth S
 * @date [Current Date]
 * @see https://leetcode.com/problems/find-the-duplicate-number
 * @brief   
