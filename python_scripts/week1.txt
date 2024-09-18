@@ -1,0 +1,11 @@
+~WEEK1
+https://leetcode.com/problems/contains-duplicate/description/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+https://leetcode.com/problems/range-sum-query-immutable/description/
+https://leetcode.com/problems/linked-list-cycle/description/
+https://leetcode.com/problems/middle-of-the-linked-list/description/
+https://leetcode.com/problems/reverse-linked-list/description/
+https://leetcode.com/problems/palindrome-linked-list/
+https://leetcode.com/problems/remove-linked-list-elements/description/
+https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+https://leetcode.com/problems/merge-two-sorted-lists/description/
