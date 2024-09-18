@@ -7,6 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
+// Build using .\build.bat "WEEK3\set-matrix-zeroes"
 */
 #include <allheaders.h>
 using namespace std;

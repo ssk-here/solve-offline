@@ -7,6 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
+// Build using .\build.bat "WEEK3\maximum-average-subarray-i"
 */
 #include <allheaders.h>
 using namespace std;

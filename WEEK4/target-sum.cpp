@@ -7,6 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
+// Build using .\build.bat "WEEK4\target-sum"
 */
 #include <allheaders.h>
 using namespace std;

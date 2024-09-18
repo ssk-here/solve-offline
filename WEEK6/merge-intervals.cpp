@@ -7,6 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
+// Build using .\build.bat "WEEK6\merge-intervals"
 */
 #include <allheaders.h>
 using namespace std;

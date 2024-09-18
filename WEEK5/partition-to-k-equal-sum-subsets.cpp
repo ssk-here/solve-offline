@@ -7,6 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
+// Build using .\build.bat "WEEK5\partition-to-k-equal-sum-subsets"
 */
 #include <allheaders.h>
 using namespace std;

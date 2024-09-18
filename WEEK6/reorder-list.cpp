@@ -7,6 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
+// Build using .\build.bat "WEEK6\reorder-list"
 */
 #include <allheaders.h>
 using namespace std;
