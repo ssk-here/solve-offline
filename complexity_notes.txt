@@ -1,0 +1,451 @@
+DMACS LEETCODE LAB
+Week 1
+1. Contains Duplicate
+https://leetcode.com/problems/contains-duplicate/description/
+best case unordered set - order n
+worst case - brute force order n^2 - dont accept
+sorting and checking nlogn - ok
+
+2. Missing Number
+https://leetcode.com/problems/missing-number/description/
+sort and check - nlogn
+unordered set - n, space -n
+bit manipulation with XOR -n
+sum and check-n
+
+3. Find all numbers disappeared in array
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
+use unordered set - n
+can use another arry to mark - n
+can use same array to mark - n , space -1
+take absolute value at nums[i] as index and mark value index negative, if it is positive
+go through loop again and count positives
+
+4. Single Number
+https://leetcode.com/problems/single-number/description/
+Use XOR - n
+use unordered map to count - n,space -n^2
+use unordered set add them up and another sum double and find difference -n
+sort and check - nlogn
+worst case - n^2
+
+5. Climbing stairs 
+https://leetcode.com/problems/climbing-stairs/description/
+Fibonacci- Recursion - 2^n
+memoization, iterative - n
+iterative - n and const space
+Formula - calculate power logn (not expected)
+
+6.Best time to buy and sell stock
+ https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+ brute force - n^2
+ 1 pass keep track of min - n
+
+7. Range Sum query
+ https://leetcode.com/problems/range-sum-query-immutable/description/
+ brute force - compute for each query - not accepted
+ calc partial sum and store - order 1 for each query . order n for calculating partial sum.
+ 
+8. Counting bits
+https://leetcode.com/problems/counting-bits/description/
+find pattern and answer DP(x) = DP(x/2) + x%2 order n
+pop count x = x & (x-1) make the last LSB zero and count till x is 0 - nlogn
+or do bit masking and keep shifting 
+
+
+9. Linked List Cycle
+https://leetcode.com/problems/linked-list-cycle/description/
+unordered set of listnodes - space n
+Floyds detection algorithm
+how many steps to find actual node after both ptrs in cycle - order n +k if cycle length is keep
+
+
+10. Middle of Linked List
+https://leetcode.com/problems/middle-of-the-linked-list/description/
+one pass slow and fast - check for odd and even
+two pass - calc length and visit again
+worst case - store in array - not accepted
+
+11. Reverse Linked List
+https://leetcode.com/problems/reverse-linked-list/description/
+Iterative - n
+Recursive - n, space -n
+Recursive with tail call optimisation(2 parameters head and prev)
+
+12. Palindrome Linked List
+https://leetcode.com/problems/palindrome-linked-list/
+worst case - copy to array and check as space-n
+reverse entire list and compare
+reverse second half and compare
+
+13. Remove Linked List elements
+https://leetcode.com/problems/remove-linked-list-elements/description/
+One pass with dummy head
+One pass without dummy head
+
+14. Remove Duplicaetes from sorted list
+https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+one pass - delete in place
+worst case - copy to array - not accepted
+
+15. Merge sorted Linked Lists
+https://leetcode.com/problems/merge-two-sorted-lists/description/
+iterative or recursive without creating extra list for result
+
+===========================================================================
+WEEK 2
+1) Meeting rooms
+https://leetcode.com/problems/meeting-rooms/description/
+-Need to check if intervals overlap
+-brute force -order n^2
+-sort and check -order nlogn
+
+2)Binary Search
+https://leetcode.com/problems/binary-search/description/
+basic binary search - nlogn
+check for int overflow while calculating mid
+corner cases - index out of  array bounds
+
+3)Find Smallest letter greater than target
+https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/
+Upper bound binary search - nlogn
+check corner cases
+
+4) Average of Levels in Binary Tree
+https://leetcode.com/problems/average-of-levels-in-binary-tree/description/
+BFS - can implement using queue
+DFS - can keep track of level while DFS and vector of sum and count for each level.
+Time - order n -( n is number of nodes)
+Space - order h - (height of tree) for DFS (worst-h=n,best-logn), order n for BFS
+ensure that sum or count is cast to double
+Give examples of best case and worst case
+
+5) Minimum Depth of Binary Tree
+https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
+DFS - recursion 1 + min of left and right. Check corner cses for left is NULL or right is NULL
+BFS - iterative using queue
+time -n, space - worst-n ,best-logn
+Give examples of best case and worst case
+
+6) Same Tree
+https://leetcode.com/problems/same-tree/description/
+DFS or BFS
+base case !p && !q -true
+base case !p || !q - false
+time -n, space - worst-n ,best-logn
+Give examples of best case and worst case
+
+7) Path sum
+https://leetcode.com/problems/path-sum/description/
+DFS -recursive or iterative using stack 
+time -n, space - worst-n ,best-logn
+
+8) Maximum Depth of Binary tree
+https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
+DFS - recursion 
+DFS - iterative using stack and keeping track of pair of node and depth.
+time -n, space - worst-n ,best-logn
+
+9) Diameter of binary tree
+https://leetcode.com/problems/diameter-of-binary-tree/description/
+DFS - recursion with calculating both height and diameter-of-binary-tree/description/
+time -n, space - worst-n ,best-logn
+
+10) Merge Two Binary Trees
+https://leetcode.com/problems/merge-two-binary-trees/description/
+DFS - iterative using stack or recursive
+time -n, space - worst-n ,best-logn
+
+11)Subtree of another tree
+https://leetcode.com/problems/subtree-of-another-tree/description/
+check same tree for each subtree of original tree - O(n*m) - n,m- size of trees
+create a hash that represents a tree and search or serialize into string and find substring - n+m-
+
+12) Invert Binary Tree
+https://leetcode.com/problems/invert-binary-tree/description/
+recursive or iterative -order n
+
+13) Two Sum
+https://leetcode.com/problems/two-sum/description/
+brute force - n^2
+convert to vector of pairs(value,index) and sort and search using left right pointers - nlogn
+use unordered map in 1 pass - order n
+
+14) Squares of sorted array
+https://leetcode.com/problems/squares-of-a-sorted-array/description/
+square and then sort - nlogn
+find first non-negative(use binary search) and then square them and merge two sorted lists - n
+two pointers from left and right compare absolute values- n
+
+15) Backspace  string compare
+https://leetcode.com/problems/backspace-string-compare/description/
+build both strings and compare - order n
+compare while building strings in reverse - order n
+corner cases - check if either strings are still nonempty at end.
+
+16) Index pairs of string
+https://leetcode.com/problems/index-pairs-of-a-string/description/
+use trie and capture all words.search for each substring in trie- order m^2 
+use unordered set and check - m^3
+for no additional space - compare for each word and each substring - n*m^2
+
+17) majority element
+https://leetcode.com/problems/majority-element/description
+brute force - order n^2
+sort and then search in one pass - nlogn
+use map to keep track of count - time - n, space -n
+boyer moore voting algorithm - time - n, space - 1
+
+18) convert 1d into 2d array
+https://leetcode.com/problems/convert-1d-array-into-2d-array/description/
+use two pointers - order n(traverse through array in 1 pass)
+one pointer - find formula for row and col.
+
+19) move zeros
+https://leetcode.com/problems/move-zeroes/description/
+Do in one pass without additional space using two pointers - n
+Do in two pass keeping count of nonzero elements
+Use additional space or order n - avoid this solution.
+
+20) is subsequence
+https://leetcode.com/problems/is-subsequence/description/
+use 2 pointers in one pass - n
+recursion - order n , uses additional space -n
+
+======================================================================================
+WEEK 3
+1)Binary Tree Paths
+https://leetcode.com/problems/binary-tree-paths/description/
+Use recursion and then modify left and right vectors -order n^2
+Use recursion and add string to result at leaf - order n
+
+2)Maximum Average Subarray I
+https://leetcode.com/problems/maximum-average-subarray-i/description/
+sliding window -1 pass - time -n, space - 1
+
+3)Product of Array Except Self
+https://leetcode.com/problems/product-of-array-except-self/description/
+2-pass - order n
+Dont use additional space apart from result.
+
+4)Find the Duplicate Number
+https://leetcode.com/problems/find-the-duplicate-number/description/
+use unordered set - time -n, space -n
+use binary search - nlogn
+use negative marking - n
+use floyd cycle detection - time -n, space -1
+
+5)Find All Duplicates in an Array
+https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
+brute force -n^2.
+sort and check-nlogn
+use set - time-n, space-n
+cyclic sort or mark elements as negative - order n 
+
+6)Set Matrix Zeroes
+https://leetcode.com/problems/set-matrix-zeroes/description/
+mark beginning of row or column to be set to 0 - order mn.,no addn space.
+
+7)Spiral Matrix
+https://leetcode.com/problems/spiral-matrix/description/
+Do in one pass- by reducing width and height in each iteration - order mn
+Keep a direction vector and mark elements and change direction when we hit marked elements - order mn
+Take care of corner cases where only 1 column or 1 row is left at end of iteration(long or wide matrices)
+
+8)Rotate Image
+https://leetcode.com/problems/rotate-image/description/
+Rotate each column and row and keep moving to the inner matrix in each iteration - order mn
+Transpose and then reverse each row(reflection row wise from the centre column) - order mn
+
+9)Word Search
+https://leetcode.com/problems/word-search/description/
+backtracking or dfs -mark visited or change board values to keep track of visited.
+need to unmark visited before looking in next direction.
+time - mn x 3^k , space - recursion stack-k.
+
+10)Longest Consecutive Sequence
+https://leetcode.com/problems/longest-consecutive-sequence/
+brute force - n^3.
+sort and check-nlogn
+Use set.Figure out startpoints( x-1 not in list). For each startpoint calculate length- order n
+
+11)Letter Case Permutation
+https://leetcode.com/problems/letter-case-permutation/description/
+use bitmask or recursion - order nx2^n .
+
+12)Subsets
+https://leetcode.com/problems/subsets/description/
+iterative - nx2^n
+bactracking  - nx2^n
+bitmasking - nx2^n 
+best solution - time - nx2^n . space - order 1.
+
+13)Subsets II
+https://leetcode.com/problems/subsets-ii/description/
+iterative(by adding new element to existing collection) - nx2^n
+bactracking  - nx2^n
+bitmasking - nx2^n 
+
+14)Permutations
+https://leetcode.com/problems/permutations/description/
+iterative - nxn!
+bactracking  - nxn!
+
+15)Permutations II
+https://leetcode.com/problems/permutations-ii/description/
+iterative - nxn!
+bactracking  - nxn!
+
+
+
+======================================================================================
+WEEK 4
+1. Combinations
+https://leetcode.com/problems/combinations
+backtracking or recursion - time - k * nCk .
+DP - use recursion formula nCk = (n-1)Ck + nC(k-1) and map. time - k * nCk .
+
+2. Combination Sum 
+https://leetcode.com/problems/combination-sum
+DP- n*T^2.
+recursion/backtracking - n^T
+
+3. Combination Sum II
+https://leetcode.com/problems/combination-sum-ii
+recursion/backtracking - 2^N
+
+4. Combination Sum III 
+https://leetcode.com/problems/combination-sum-iii
+recursion/backtracking - k!xkx9Ck
+
+5. Generate Parentheses
+https://leetcode.com/problems/generate-parentheses
+Idea of Catalan Numbers and recursion formula- iteration - 4^n / sqrt(n)
+Backtracking and checking valid parentheses-4^n / sqrt(n)
+
+6. Target Sum
+https://leetcode.com/problems/target-sum
+Recursion & Memoization -t*n
+DP- t*n
+
+7. Palindrome Partitioning
+https://leetcode.com/problems/palindrome-partitioning
+Recursion - nx2^n
+DP - nx2^n
+
+8. Letter Combinations of a Phone Number
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/
+Iterative - 4^NxN , N=#digits
+Recursion - 4^NxN
+
+9. Generalized Abbreviation
+https://leetcode.com/problems/generalized-abbreviation
+Recursion - Nx2^N
+Bitmasking - Nx2^N
+
+10. House Robber 
+https://leetcode.com/problems/house-robber
+Recursion/DP -time-n space-n
+DP with space optimisation-time-n space-1
+
+11. Maximum Subarray
+https://leetcode.com/problems/maximum-subarray
+Brute force -n^3
+Kadane Algo -n
+
+12. House Robber II
+https://leetcode.com/problems/house-robber-ii
+DP from both ends - 2 pass - order n
+
+13. Coin Change
+https://leetcode.com/problems/coin-change
+DP - nxamount;
+
+14. Maximum Product Subarray
+https://leetcode.com/problems/maximum-product-subarray
+DP from both ends - 2 pass - order n
+
+15. Longest Increasing Subsequence
+https://leetcode.com/problems/longest-increasing-subsequence
+DP -n^2
+Build subsequence with binary search-nlogn
+
+======================================================================================
+WEEK 5
+1. Longest Palindromic Substring
+https://leetcode.com/problems/longest-palindromic-substring
+
+2. Word Break 
+https://leetcode.com/problems/word-break
+
+3. Combination Sum IV 
+https://leetcode.com/problems/combination-sum-iv
+
+4. Decode Ways
+https://leetcode.com/problems/decode-ways
+
+5. Unique Paths
+https://leetcode.com/problems/unique-paths
+
+6. Jump Game
+https://leetcode.com/problems/jump-game
+
+7. Palindromic Substrings
+https://leetcode.com/problems/palindromic-substrings
+
+8. Number of Longest Increasing Subsequence
+https://leetcode.com/problems/number-of-longest-increasing-subsequence
+
+9. Partition Equal Subset Sum
+https://leetcode.com/problems/partition-equal-subset-sum
+
+10. Partition to K Equal Sum Subsets
+https://leetcode.com/problems/partition-to-k-equal-sum-subsets
+
+11. Best Time to Buy and Sell Stock with Cooldown
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
+
+12. Linked List Cycle II
+https://leetcode.com/problems/linked-list-cycle-ii
+
+13. Add Two Numbers
+https://leetcode.com/problems/add-two-numbers
+
+14. Remove Nth Node From End of List
+https://leetcode.com/problems/remove-nth-node-from-end-of-list
+
+15. Sort List
+https://leetcode.com/problems/sort-list
+
+======================================================================================
+WEEK 6
+1. Reorder List 
+2. Clone Graph 
+3. Pacific Atlantic Water Flow 
+4. Number of Islands
+5. Graph Valid Tree
+6. Number of Connected Components in an Undirected Graph
+7. Reverse Linked List II
+8. Rotate List
+9. Swap Nodes in Pairs
+10. Odd Even Linked List
+11. Kth Smallest Element in a Sorted Matrix
+12. Find K Pairs with Smallest Sums
+13. Merge Intervals
+14. Interval List Intersections
+15. Non-overlapping Intervals
+https://leetcode.com/problems/reorder-list
+https://leetcode.com/problems/clone-graph
+https://leetcode.com/problems/pacific-atlantic-water-flow
+https://leetcode.com/problems/number-of-islands
+https://leetcode.com/problems/graph-valid-tree
+https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph
+https://leetcode.com/problems/reverse-linked-list-ii
+https://leetcode.com/problems/rotate-list
+https://leetcode.com/problems/swap-nodes-in-pairs
+https://leetcode.com/problems/odd-even-linked-list
+https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix
+https://leetcode.com/problems/find-k-pairs-with-smallest-sums
+https://leetcode.com/problems/merge-intervals
+https://leetcode.com/problems/interval-list-intersections
+https://leetcode.com/problems/non-overlapping-intervals
