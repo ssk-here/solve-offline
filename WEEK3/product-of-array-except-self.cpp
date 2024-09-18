@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK3\product-of-array-except-self"
+*  Build using .\build.bat "WEEK3\product-of-array-except-self"
 */
 #include <allheaders.h>
 using namespace std;

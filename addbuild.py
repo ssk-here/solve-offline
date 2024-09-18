@@ -24,7 +24,7 @@ def process_single_cpp_file(foldername,file_path):
             return
 
         # Add the desired content at the tenth line
-        lines.insert(9, f'// Build using .\\build.bat "{foldername+filename[:-4]}"\n')
+        lines[9] = f'*  Build using .\\build.bat "{foldername+filename[:-4]}"\n'
 
         # Write the updated content back to the file
         with open(file_path, 'w') as outfile:
@@ -35,6 +35,8 @@ def process_single_cpp_file(foldername,file_path):
         print(f"Error processing {file_path}: {e}")
 
 if __name__ == "__main__":
+    target_folder = "./WEEK3"  # Replace with the actual folder path
+    process_cpp_files(target_folder)
     target_folder = "./WEEK4"  # Replace with the actual folder path
     process_cpp_files(target_folder)
     target_folder = "./WEEK5"  # Replace with the actual folder path

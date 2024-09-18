@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK4\generate-parentheses"
+*  Build using .\build.bat "WEEK4\generate-parentheses"
 */
 #include <allheaders.h>
 using namespace std;

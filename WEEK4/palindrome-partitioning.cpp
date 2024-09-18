@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK4\palindrome-partitioning"
+*  Build using .\build.bat "WEEK4\palindrome-partitioning"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK6\number-of-islands"
+*  Build using .\build.bat "WEEK6\number-of-islands"
 */
 #include <allheaders.h>
 using namespace std;

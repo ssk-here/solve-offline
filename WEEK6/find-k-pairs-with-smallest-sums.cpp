@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK6\find-k-pairs-with-smallest-sums"
+*  Build using .\build.bat "WEEK6\find-k-pairs-with-smallest-sums"
 */
 #include <allheaders.h>
 using namespace std;

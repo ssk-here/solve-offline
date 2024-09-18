@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK5\remove-nth-node-from-end-of-list"
+*  Build using .\build.bat "WEEK5\remove-nth-node-from-end-of-list"
 */
 #include <allheaders.h>
 using namespace std;

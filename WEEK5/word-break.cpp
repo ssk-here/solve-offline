@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK5\word-break"
+*  Build using .\build.bat "WEEK5\word-break"
 */
 #include <allheaders.h>
 using namespace std;

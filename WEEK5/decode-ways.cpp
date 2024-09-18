@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK5\decode-ways"
+*  Build using .\build.bat "WEEK5\decode-ways"
 */
 #include <allheaders.h>
 using namespace std;

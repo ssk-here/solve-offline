@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK4\coin-change"
+*  Build using .\build.bat "WEEK4\coin-change"
 */
 #include <allheaders.h>
 using namespace std;

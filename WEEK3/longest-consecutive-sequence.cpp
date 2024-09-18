@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK3\longest-consecutive-sequence"
+*  Build using .\build.bat "WEEK3\longest-consecutive-sequence"
 */
 #include <allheaders.h>
 using namespace std;

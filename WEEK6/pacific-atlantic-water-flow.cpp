@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK6\pacific-atlantic-water-flow"
+*  Build using .\build.bat "WEEK6\pacific-atlantic-water-flow"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK6\non-overlapping-intervals"
+*  Build using .\build.bat "WEEK6\non-overlapping-intervals"
 */
 #include <allheaders.h>
 using namespace std;

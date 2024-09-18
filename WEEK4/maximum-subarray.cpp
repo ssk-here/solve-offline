@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK4\maximum-subarray"
+*  Build using .\build.bat "WEEK4\maximum-subarray"
 */
 #include <allheaders.h>
 using namespace std;

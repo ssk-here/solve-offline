@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK3\find-all-duplicates-in-an-array"
+*  Build using .\build.bat "WEEK3\find-all-duplicates-in-an-array"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK5\palindromic-substrings"
+*  Build using .\build.bat "WEEK5\palindromic-substrings"
 */
 #include <allheaders.h>
 using namespace std;

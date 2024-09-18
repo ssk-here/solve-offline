@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-// Build using .\build.bat "WEEK3\binary-tree-paths"
+*  Build using .\build.bat "WEEK3\binary-tree-paths"
 */
 #include <allheaders.h>
 using namespace std;
