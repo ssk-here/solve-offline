@@ -6,6 +6,7 @@ This is a repository to solve problems offline.
 ## Prerequisites
 1. g++ compiler for windows. Refer to https://code.visualstudio.com/docs/cpp/config-mingw
 2. make utility for windows.
+3. VS Code(optional)
 
 ## Example Usage on Windows 11 Terminal
 
@@ -17,6 +18,16 @@ This is a repository to solve problems offline.
     ```
 4. In case of errors, read the comments in `build.bat` file.
 5. The sample inputs are present in the input file. Check the output in `./WEEK3/binary-tree-paths_output.txt`.
+
+## Example Usage using VS Code
+
+1. Ensure path to gdb in launch.json is set correctly.
+2. Ensure that path is set correctly in environment variables
+3. CTRL+SHIFT+B and select Compile and Run. 
+4. CTRL+SHIFT+D to DEBUG
+5. Edit tasks.json for compiling and executing.
+6. Edit launch.json for debugging using gdb
+7. Sample launch.json and tasks.json are provided.
 
 ## Sample Test Function for `./WEEK3/binary-tree-paths_output.cpp`
 
