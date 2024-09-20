@@ -152,7 +152,25 @@ void Output::appendInput(const std::vector<int>& V) {
     ctr = ctr + ".Input:" + str;
     outputData.push_back(ctr);
 }
+void Output::appendInput(const std::vector<int>& V, int& target) {
+    // Appends a vector input and an integer target to the output data with a counter
+    std::string ctr = std::to_string(Output::counter++);
+    std::string str = Output::toString(V);
+    ctr = ctr + ".Input:" + str + "," + std::to_string(target);
+    outputData.push_back(ctr);
+}
 
+void Output::appendOutput(const int& res) {
+    // Appends an integer output to the output data
+    outputData.push_back(std::to_string(res));
+}
+
+void Output::appendOutput(const bool& res) {
+    // Appends a boolean output to the output data
+    outputData.push_back(res ? "true" : "false");
+}
+
+void appendOutput(const bool & res);
 void Output::appendOutput(const std::vector<int>& V) {
     // Appends a vector output to the output data
     std::string str = Output::toString(V);
@@ -213,5 +231,24 @@ void Output::writeOutputFile(const std::string& filename) {
     }
     for (const auto& line : outputData) {
         file << line << std::endl;
+    }
+}
+
+void Common::parseArguments(int argc, char* argv[]){
+    if (argc != 3) {
+        std::cerr << "Usage: " << argv[0] << " <inputfile> <outputfile>" << std::endl;
+        exit(1);
+    }
+
+    std::ifstream infile(argv[1]);
+    if (!infile) {
+    std::cerr << "Could not open input file." << std::endl;
+    exit(1);
+    }
+
+    std::ofstream outfile(argv[2]);
+    if (!outfile) {
+    std::cerr << "Could not open output file." << std::endl;
+    exit(1);
     }
 }

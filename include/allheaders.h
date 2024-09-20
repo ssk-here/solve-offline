@@ -21,6 +21,7 @@
 #include <unordered_set>
 #include <fstream>
 #include <sstream>
+#include <numeric>
 
 #include <TestReader.h>
 

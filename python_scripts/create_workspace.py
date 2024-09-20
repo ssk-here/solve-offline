@@ -172,18 +172,19 @@ def main():
 
         except:
             continue
+    #creates the workspace
+    create_leetcode_files(foldername, code, titleslugs, tests)
+    #creates html and pdf
     global htmlstr
     global contents_str
     contents_str += '<p style="page-break-before: always" ></p>'
     htmlstr = htmlstr.replace("XXXX_REPLACE_CONTENTS_XXXX",contents_str,1)
-    file = open(outputhtml,'w')
-    file.write(htmlstr)
+    with open(outputhtml, 'wb') as file:
+        file.write(htmlstr.encode('utf-8'))
     htmlstr += '</div>'
     from xhtml2pdf import pisa
     with open(outputpdf, "w+b") as pdf_file:
         pisa.CreatePDF(htmlstr, dest=pdf_file)
-    #creates the workspace
-    create_leetcode_files(foldername, code, titleslugs, tests)
     #writes html to pdf
     print("PDF created successfully!")
     #HTML(string=htmlstr).write_pdf(outputpdf)

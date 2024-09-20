@@ -48,13 +48,13 @@ public:
 
 void Test(const std::string& inputfile, const std::string& outputfile) {
     InputParser Ip;
-    Solution solution;
     Output Op;
 
     std::vector<std::string> V = Ip.readInputFile(inputfile);
     std::vector<std::string> Output;
     for (auto &input : V) {
         TreeNode* root = Ip.buildTree(input);
+        Solution solution;
         std::vector<std::string> paths = solution.binaryTreePaths(root);
         Op.appendInput(input);
         for (auto p : paths)
@@ -65,22 +65,7 @@ void Test(const std::string& inputfile, const std::string& outputfile) {
 }
 
 int main(int argc, char* argv[]) {
-    if (argc != 3) {
-    std::cerr << "Usage: " << argv[0] << " <inputfile> <outputfile>" << std::endl;
-    return 1;
-    }
-
-    std::ifstream infile(argv[1]);
-    if (!infile) {
-    std::cerr << "Could not open input file." << std::endl;
-    return 1;
-    }
-
-    std::ofstream outfile(argv[2]);
-    if (!outfile) {
-    std::cerr << "Could not open output file." << std::endl;
-    return 1;
-    }
+	Common().parseArguments(argc,argv);
 
     Test(argv[1], argv[2]);
 

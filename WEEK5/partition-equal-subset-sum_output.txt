@@ -1,1 +1,4 @@
-Output:
+1.Input:[1,5,11,5]
+true
+2.Input:[1,2,3,5]
+true

@@ -3,7 +3,11 @@ Sairam
 
 This is a repository to solve problems offline.
 
-## Sample Usage on Windows 11 Terminal
+## Prerequisites
+1. g++ compiler for windows. Refer to https://code.visualstudio.com/docs/cpp/config-mingw
+2. make utility for windows.
+
+## Example Usage on Windows 11 Terminal
 
 1. Edit the `WEEK3/binary-tree-paths.cpp` file with your solution.
 2. Use the below test function for testing.
@@ -19,13 +23,13 @@ This is a repository to solve problems offline.
 ```cpp
 void Test(const std::string& inputfile, const std::string& outputfile) {
      InputParser Ip;
-     Solution solution;
      Output Op;
 
      std::vector<std::string> V = Ip.readInputFile(inputfile);
      std::vector<std::string> Output;
      for (auto &input : V) {
           TreeNode* root = Ip.buildTree(input);
+          Solution solution; //need new object for every test case
           std::vector<std::string> paths = solution.binaryTreePaths(root);
           Op.appendInput(input);
           for (auto p : paths)

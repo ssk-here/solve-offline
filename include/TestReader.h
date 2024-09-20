@@ -14,6 +14,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <iostream>
 #include <queue>
 #include <memory>
 
@@ -52,6 +53,9 @@ public:
     void appendInput(const std::string& str);
     void appendOutput(const std::string& str);
     void appendInput(const std::vector<int>& V);
+    void appendInput(const std::vector<int>& V,int &target);
+    void appendOutput(const int & res);
+    void appendOutput(const bool & res);
     void appendOutput(const std::vector<int>& V);
     void appendOutput(ListNode *head);
     std::string toString(const std::vector<int>& V);
@@ -61,6 +65,10 @@ public:
 
 };
 
+class Common{
+    public:    
+    void parseArguments(int argc, char* argv[]);
+};
 #endif // TESTREADER_H
 
     

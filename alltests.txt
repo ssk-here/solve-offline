@@ -1,0 +1,107 @@
+-------------------------------------------------------------------------
+// reads vector,converts to tree
+// writes vectors
+void Test(const std::string& inputfile, const std::string& outputfile) {
+    InputParser Ip;
+    Output Op;
+
+    std::vector<std::string> V = Ip.readInputFile(inputfile);
+    std::vector<std::string> Output;
+    for (auto &input : V) {
+        Solution solution;
+        TreeNode* root = Ip.buildTree(input);
+        std::vector<std::string> paths = solution.binaryTreePaths(root);
+        Op.appendInput(input);
+        for (auto p : paths)
+            Op.appendOutput(p);
+    }
+
+    Op.writeOutputFile(outputfile);
+}
+
+-------------------------------------------------------------------------
+// reads vector
+// writes vector
+void Test(const std::string& inputfile, const std::string& outputfile) {
+    InputParser Ip;
+    Output Op;
+
+    std::vector<std::string> V = Ip.readInputFile(inputfile);
+    std::vector<std::string> Output;
+    std::vector<int> Vin,Vin1,Vout;
+    for (auto &input : V) {
+        Solution solution;
+        Vin = Ip.buildVector(input);
+        Vin1=Vin;//pass by reference changes Vin
+        Vout = solution.findDuplicates(Vin);
+        Op.appendInput(Vin1);
+        Op.appendOutput(Vout);
+    }
+
+    Op.writeOutputFile(outputfile);
+}
+
+-------------------------------------------------------------------------
+// reads vector and int
+// writes int
+void Test(const std::string& inputfile, const std::string& outputfile) {
+    InputParser Ip;
+    Output Op;
+    std::vector<std::string> V = Ip.readInputFile(inputfile);
+    int target,res;
+    std::vector<std::string> Output;
+    std::vector<int> Vin,Vin1,Vout;
+    for(size_t i=0; i<V.size(); i+=2) {  
+        Vin = Ip.buildVector(V[i]);
+        target = Ip.readInt(V[i+1]);
+        Vin1=Vin;//pass by reference changes Vin
+        Solution solution;//need new object for each test case
+        res = solution.combinationSum4(Vin,target);
+        Op.appendInput(Vin1,target);
+        Op.appendOutput(res);
+    }
+
+    Op.writeOutputFile(outputfile);
+}
+-------------------------------------------------------------------------
+// reads vector
+// writes int
+void Test(const std::string& inputfile, const std::string& outputfile) {
+    InputParser Ip;
+    Output Op;
+    std::vector<std::string> V = Ip.readInputFile(inputfile);
+    int target,res;
+    std::vector<std::string> Output;
+    std::vector<int> Vin,Vin1,Vout;
+    for(size_t i=0; i<V.size(); i++) {  
+        Vin = Ip.buildVector(V[i]);
+        Vin1=Vin;//pass by reference changes Vin
+        Solution solution;//need new object for each test case
+        res = solution.combinationSum4(Vin,target);
+        Op.appendInput(Vin1);
+        Op.appendOutput(res);
+    }
+
+    Op.writeOutputFile(outputfile);
+}
+-------------------------------------------------------------------------
+// reads vector
+// writes bool
+void Test(const std::string& inputfile, const std::string& outputfile) {
+    InputParser Ip;
+    Output Op;
+    std::vector<std::string> V = Ip.readInputFile(inputfile);
+    bool res;
+    std::vector<std::string> Output;
+    std::vector<int> Vin,Vin1,Vout;
+    for(size_t i=0; i<V.size(); i++) {  
+        Vin = Ip.buildVector(V[i]);
+        Vin1=Vin;//pass by reference changes Vin
+        Solution solution;//need new object for each test case
+        res = solution.combinationSum4(Vin,target);
+        Op.appendInput(Vin1);
+        Op.appendOutput(res);
+    }
+
+    Op.writeOutputFile(outputfile);
+}
