@@ -64,7 +64,7 @@ g++ -Iinclude -Wall -g -o WEEK3/binary-tree-paths.exe WEEK3/binary-tree-paths.cp
 ## Sample Output on Terminal
 
 ```sh
-.\build.bat "WEEK3\binary-tree-paths"
+.\build.bat "WEEK3" "binary-tree-paths"
 EXEFILE=WEEK3\binary-tree-paths.exe
 CPPFILE=WEEK3\binary-tree-paths.cpp
 INPUTFILE=WEEK3\data\binary-tree-paths_input.txt
