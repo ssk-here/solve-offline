@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\longest-subarray-of-1s-after-deleting-one-element"
+* Build using .\build.bat "WEEK10" "longest-subarray-of-1s-after-deleting-one-element"
 */
 #include <allheaders.h>
 using namespace std;

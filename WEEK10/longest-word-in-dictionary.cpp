@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\longest-word-in-dictionary"
+* Build using .\build.bat "WEEK10" "longest-word-in-dictionary"
 */
 #include <allheaders.h>
 using namespace std;

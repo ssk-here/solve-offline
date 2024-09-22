@@ -14,10 +14,10 @@ This is a repository to solve problems offline.
 2. Use the below test function for testing.
 3. Run on terminal or PowerShell:
     ```sh
-    .\build.bat "WEEK3\binary-tree-paths"
+    .\build.bat "WEEK3" "binary-tree-paths"
     ```
 4. In case of errors, read the comments in `build.bat` file.
-5. The sample inputs are present in the input file. Check the output in `./WEEK3/binary-tree-paths_output.txt`.
+5. Data folder contains sample inputs. Check the output in `./WEEK3/data/binary-tree-paths_output.txt`.
 
 ## Example Usage using VS Code
 
@@ -58,7 +58,7 @@ The batch file deletes the contents of the output file and runs the below comman
 del ./WEEK3/binary-tree-paths.exe                                               
 make MAINFILE=./WEEK3/binary-tree-paths                                         
 g++ -Iinclude -Wall -g -o WEEK3/binary-tree-paths.exe WEEK3/binary-tree-paths.cpp
-./WEEK3/binary-tree-paths.exe ./WEEK3/binary-tree-paths_input.txt ./WEEK3/binary-tree-paths_output.txt
+./WEEK3/binary-tree-paths.exe ./WEEK3/data/binary-tree-paths_input.txt ./WEEK3/data/binary-tree-paths_output.txt
 ```
 
 ## Sample Output on Terminal
@@ -67,13 +67,13 @@ g++ -Iinclude -Wall -g -o WEEK3/binary-tree-paths.exe WEEK3/binary-tree-paths.cp
 .\build.bat "WEEK3\binary-tree-paths"
 EXEFILE=WEEK3\binary-tree-paths.exe
 CPPFILE=WEEK3\binary-tree-paths.cpp
-INPUTFILE=WEEK3\binary-tree-paths_input.txt
-OUTPUTFILE=WEEK3\binary-tree-paths_output.txt
-Deleting contents of WEEK3\binary-tree-paths_output.txt
+INPUTFILE=WEEK3\data\binary-tree-paths_input.txt
+OUTPUTFILE=WEEK3\data\binary-tree-paths_output.txt
+Deleting contents of WEEK3\data\binary-tree-paths_output.txt
 g++ -Iinclude -Wall -g -o WEEK3\binary-tree-paths.exe WEEK3\binary-tree-paths.cpp
 BUILD Successful. Running WEEK3\binary-tree-paths.exe
-Complete. Check WEEK3\binary-tree-paths_output.txt
-Displaying contents of WEEK3\binary-tree-paths_output.txt
+Complete. Check WEEK3\data\binary-tree-paths_output.txt
+Displaying contents of WEEK3\data\binary-tree-paths_output.txt
 1. Input: [1,2,3,null,5]
     1->2->5
     1->3

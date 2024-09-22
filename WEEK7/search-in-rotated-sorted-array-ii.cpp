@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\search-in-rotated-sorted-array-ii"
+* Build using .\build.bat "WEEK7" "search-in-rotated-sorted-array-ii"
 */
 #include <allheaders.h>
 using namespace std;

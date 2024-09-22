@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\find-smallest-letter-greater-than-target"
+* Build using .\build.bat "WEEK2" "find-smallest-letter-greater-than-target"
 */
 #include <allheaders.h>
 using namespace std;

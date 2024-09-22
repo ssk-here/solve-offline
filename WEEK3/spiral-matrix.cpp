@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK3\spiral-matrix"
+*  Build using .\build.bat "WEEK3" "spiral-matrix"
 */
 #include <allheaders.h>
 using namespace std;

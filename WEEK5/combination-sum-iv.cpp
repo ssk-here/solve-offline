@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK5\combination-sum-iv"
+*  Build using .\build.bat "WEEK5" "combination-sum-iv"
 * Notes //choose nums[0] in the first place
         //find different ways to get target - nums[0] from nums
         //if target < min, return 0.

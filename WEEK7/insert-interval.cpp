@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\insert-interval"
+* Build using .\build.bat "WEEK7" "insert-interval"
 */
 #include <allheaders.h>
 using namespace std;

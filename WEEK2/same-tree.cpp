@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\same-tree"
+* Build using .\build.bat "WEEK2" "same-tree"
 */
 #include <allheaders.h>
 using namespace std;

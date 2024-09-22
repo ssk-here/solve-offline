@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\two-sum"
+* Build using .\build.bat "WEEK2" "two-sum"
 */
 #include <allheaders.h>
 using namespace std;

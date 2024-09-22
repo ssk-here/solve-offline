@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\binary-tree-right-side-view"
+* Build using .\build.bat "WEEK9" "binary-tree-right-side-view"
 */
 #include <allheaders.h>
 using namespace std;

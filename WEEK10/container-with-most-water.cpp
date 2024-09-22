@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\container-with-most-water"
+* Build using .\build.bat "WEEK10" "container-with-most-water"
 */
 #include <allheaders.h>
 using namespace std;

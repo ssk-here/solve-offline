@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\minimum-height-trees"
+* Build using .\build.bat "WEEK8" "minimum-height-trees"
 */
 #include <allheaders.h>
 using namespace std;

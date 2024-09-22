@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\maximum-xor-of-two-numbers-in-an-array"
+* Build using .\build.bat "WEEK10" "maximum-xor-of-two-numbers-in-an-array"
 */
 #include <allheaders.h>
 using namespace std;

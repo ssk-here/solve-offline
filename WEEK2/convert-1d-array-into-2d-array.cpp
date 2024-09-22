@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\convert-1d-array-into-2d-array"
+* Build using .\build.bat "WEEK2" "convert-1d-array-into-2d-array"
 */
 #include <allheaders.h>
 using namespace std;

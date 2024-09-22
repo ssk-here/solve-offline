@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK1\remove-linked-list-elements"
+* Build using .\build.bat "WEEK1" "remove-linked-list-elements"
 */
 #include <allheaders.h>
 using namespace std;

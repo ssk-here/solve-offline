@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK6\clone-graph"
+*  Build using .\build.bat "WEEK6" "clone-graph"
 */
 #include <allheaders.h>
 using namespace std;

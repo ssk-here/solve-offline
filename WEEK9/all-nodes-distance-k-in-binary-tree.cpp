@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\all-nodes-distance-k-in-binary-tree"
+* Build using .\build.bat "WEEK9" "all-nodes-distance-k-in-binary-tree"
 */
 #include <allheaders.h>
 using namespace std;

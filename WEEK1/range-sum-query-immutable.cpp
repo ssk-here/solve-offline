@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK1\range-sum-query-immutable"
+* Build using .\build.bat "WEEK1" "range-sum-query-immutable"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK3\permutations-ii"
+*  Build using .\build.bat "WEEK3" "permutations-ii"
 */
 #include <allheaders.h>
 using namespace std;

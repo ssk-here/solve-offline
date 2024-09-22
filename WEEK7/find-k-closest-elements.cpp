@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\find-k-closest-elements"
+* Build using .\build.bat "WEEK7" "find-k-closest-elements"
 */
 #include <allheaders.h>
 using namespace std;

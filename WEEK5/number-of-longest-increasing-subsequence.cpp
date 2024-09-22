@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK5\number-of-longest-increasing-subsequence"
+*  Build using .\build.bat "WEEK5" "number-of-longest-increasing-subsequence"
 */
 #include <allheaders.h>
 using namespace std;

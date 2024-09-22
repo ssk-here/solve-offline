@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\minimum-size-subarray-sum"
+* Build using .\build.bat "WEEK7" "minimum-size-subarray-sum"
 */
 #include <allheaders.h>
 using namespace std;

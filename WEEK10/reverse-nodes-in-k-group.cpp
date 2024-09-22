@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\reverse-nodes-in-k-group"
+* Build using .\build.bat "WEEK10" "reverse-nodes-in-k-group"
 */
 #include <allheaders.h>
 using namespace std;

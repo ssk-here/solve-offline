@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\squares-of-a-sorted-array"
+* Build using .\build.bat "WEEK2" "squares-of-a-sorted-array"
 */
 #include <allheaders.h>
 using namespace std;

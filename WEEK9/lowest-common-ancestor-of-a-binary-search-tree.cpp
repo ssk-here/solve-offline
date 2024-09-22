@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\lowest-common-ancestor-of-a-binary-search-tree"
+* Build using .\build.bat "WEEK9" "lowest-common-ancestor-of-a-binary-search-tree"
 */
 #include <allheaders.h>
 using namespace std;

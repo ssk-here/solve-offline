@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\max-consecutive-ones-iii"
+* Build using .\build.bat "WEEK10" "max-consecutive-ones-iii"
 */
 #include <allheaders.h>
 using namespace std;

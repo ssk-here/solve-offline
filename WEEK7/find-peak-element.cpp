@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\find-peak-element"
+* Build using .\build.bat "WEEK7" "find-peak-element"
 */
 #include <allheaders.h>
 using namespace std;

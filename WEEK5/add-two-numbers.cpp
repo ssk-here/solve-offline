@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK5\add-two-numbers"
+*  Build using .\build.bat "WEEK5" "add-two-numbers"
 */
 #include <allheaders.h>
 using namespace std;

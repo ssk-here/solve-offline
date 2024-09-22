@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\find-minimum-in-rotated-sorted-array"
+* Build using .\build.bat "WEEK7" "find-minimum-in-rotated-sorted-array"
 */
 #include <allheaders.h>
 using namespace std;

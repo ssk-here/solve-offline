@@ -1,4 +1,20 @@
+1. (vector-tree) -> vector
+2. (vector) -> vector
+3. (vector,int) -> int
+4. (vector) -> int
+5. (vector) -> bool
+6. (int,int) -> int
+
+
+
+
+
+
+TODO
+
+
 -------------------------------------------------------------------------
+//1
 // reads vector,converts to tree
 // writes vectors
 void Test(const std::string& inputfile, const std::string& outputfile) {
@@ -20,6 +36,7 @@ void Test(const std::string& inputfile, const std::string& outputfile) {
 }
 
 -------------------------------------------------------------------------
+//2
 // reads vector
 // writes vector
 void Test(const std::string& inputfile, const std::string& outputfile) {
@@ -42,6 +59,7 @@ void Test(const std::string& inputfile, const std::string& outputfile) {
 }
 
 -------------------------------------------------------------------------
+//3
 // reads vector and int
 // writes int
 void Test(const std::string& inputfile, const std::string& outputfile) {
@@ -64,6 +82,7 @@ void Test(const std::string& inputfile, const std::string& outputfile) {
     Op.writeOutputFile(outputfile);
 }
 -------------------------------------------------------------------------
+//4
 // reads vector
 // writes int
 void Test(const std::string& inputfile, const std::string& outputfile) {
@@ -85,6 +104,7 @@ void Test(const std::string& inputfile, const std::string& outputfile) {
     Op.writeOutputFile(outputfile);
 }
 -------------------------------------------------------------------------
+//5
 // reads vector
 // writes bool
 void Test(const std::string& inputfile, const std::string& outputfile) {
@@ -105,3 +125,25 @@ void Test(const std::string& inputfile, const std::string& outputfile) {
 
     Op.writeOutputFile(outputfile);
 }
+
+-------------------------------------------------------------------------
+//6
+// reads int and int
+// writes int
+void Test(const std::string& inputfile, const std::string& outputfile) {
+    InputParser Ip;
+    Output Op;
+    std::vector<std::string> V = Ip.readInputFile(inputfile);
+    int m,n,res;
+    for(size_t i=0; i<V.size(); i+=2) {  
+        m = Ip.readInt(V[i]);
+        n = Ip.readInt(V[i+1]);
+        Solution solution;//need new object for each test case
+        res = solution.f(m,n);
+        Op.appendInput(int m,int n);
+        Op.appendOutput(res);
+    }
+
+    Op.writeOutputFile(outputfile);
+}
+-------------------------------------------------------------------------

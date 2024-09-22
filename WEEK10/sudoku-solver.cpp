@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\sudoku-solver"
+* Build using .\build.bat "WEEK10" "sudoku-solver"
 */
 #include <allheaders.h>
 using namespace std;

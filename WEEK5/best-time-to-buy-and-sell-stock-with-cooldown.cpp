@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK5\best-time-to-buy-and-sell-stock-with-cooldown"
+*  Build using .\build.bat "WEEK5" "best-time-to-buy-and-sell-stock-with-cooldown"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK6\rotate-list"
+*  Build using .\build.bat "WEEK6" "rotate-list"
 */
 #include <allheaders.h>
 using namespace std;

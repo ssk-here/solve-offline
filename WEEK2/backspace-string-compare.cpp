@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\backspace-string-compare"
+* Build using .\build.bat "WEEK2" "backspace-string-compare"
 */
 #include <allheaders.h>
 using namespace std;

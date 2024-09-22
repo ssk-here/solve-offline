@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\fruit-into-baskets"
+* Build using .\build.bat "WEEK7" "fruit-into-baskets"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\construct-binary-tree-from-preorder-and-inorder-traversal"
+* Build using .\build.bat "WEEK9" "construct-binary-tree-from-preorder-and-inorder-traversal"
 */
 #include <allheaders.h>
 using namespace std;

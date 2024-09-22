@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK3\word-search"
+*  Build using .\build.bat "WEEK3" "word-search"
 */
 #include <allheaders.h>
 using namespace std;

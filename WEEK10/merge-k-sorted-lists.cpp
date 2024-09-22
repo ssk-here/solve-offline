@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\merge-k-sorted-lists"
+* Build using .\build.bat "WEEK10" "merge-k-sorted-lists"
 */
 #include <allheaders.h>
 using namespace std;

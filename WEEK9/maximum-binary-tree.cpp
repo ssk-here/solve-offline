@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\maximum-binary-tree"
+* Build using .\build.bat "WEEK9" "maximum-binary-tree"
 */
 #include <allheaders.h>
 using namespace std;

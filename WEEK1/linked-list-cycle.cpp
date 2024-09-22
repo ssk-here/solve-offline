@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK1\linked-list-cycle"
+* Build using .\build.bat "WEEK1" "linked-list-cycle"
 */
 #include <allheaders.h>
 using namespace std;

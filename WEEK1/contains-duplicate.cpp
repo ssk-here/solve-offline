@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK1\contains-duplicate"
+* Build using .\build.bat "WEEK1" "contains-duplicate"
 */
 #include <allheaders.h>
 using namespace std;

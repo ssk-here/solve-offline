@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK1\reverse-linked-list"
+* Build using .\build.bat "WEEK1" "reverse-linked-list"
 */
 #include <allheaders.h>
 using namespace std;

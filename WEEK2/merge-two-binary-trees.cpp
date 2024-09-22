@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\merge-two-binary-trees"
+* Build using .\build.bat "WEEK2" "merge-two-binary-trees"
 */
 #include <allheaders.h>
 using namespace std;

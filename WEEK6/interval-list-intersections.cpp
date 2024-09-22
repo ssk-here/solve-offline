@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK6\interval-list-intersections"
+*  Build using .\build.bat "WEEK6" "interval-list-intersections"
 */
 #include <allheaders.h>
 using namespace std;

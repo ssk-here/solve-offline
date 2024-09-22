@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\maximum-number-of-vowels-in-a-substring-of-given-length"
+* Build using .\build.bat "WEEK10" "maximum-number-of-vowels-in-a-substring-of-given-length"
 */
 #include <allheaders.h>
 using namespace std;

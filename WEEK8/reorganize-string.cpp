@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\reorganize-string"
+* Build using .\build.bat "WEEK8" "reorganize-string"
 */
 #include <allheaders.h>
 using namespace std;

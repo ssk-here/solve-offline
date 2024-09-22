@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\kth-smallest-element-in-a-bst"
+* Build using .\build.bat "WEEK8" "kth-smallest-element-in-a-bst"
 */
 #include <allheaders.h>
 using namespace std;

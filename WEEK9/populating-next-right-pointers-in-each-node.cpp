@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\populating-next-right-pointers-in-each-node"
+* Build using .\build.bat "WEEK9" "populating-next-right-pointers-in-each-node"
 */
 #include <allheaders.h>
 using namespace std;

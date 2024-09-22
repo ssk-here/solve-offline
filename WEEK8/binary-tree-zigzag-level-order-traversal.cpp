@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\binary-tree-zigzag-level-order-traversal"
+* Build using .\build.bat "WEEK8" "binary-tree-zigzag-level-order-traversal"
 */
 #include <allheaders.h>
 using namespace std;

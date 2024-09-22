@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\kth-largest-element-in-an-array"
+* Build using .\build.bat "WEEK8" "kth-largest-element-in-an-array"
 */
 #include <allheaders.h>
 using namespace std;

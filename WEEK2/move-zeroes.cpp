@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\move-zeroes"
+* Build using .\build.bat "WEEK2" "move-zeroes"
 */
 #include <allheaders.h>
 using namespace std;

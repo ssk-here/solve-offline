@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\is-subsequence"
+* Build using .\build.bat "WEEK2" "is-subsequence"
 */
 #include <allheaders.h>
 using namespace std;

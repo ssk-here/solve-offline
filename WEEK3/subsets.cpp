@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK3\subsets"
+*  Build using .\build.bat "WEEK3" "subsets"
 */
 #include <allheaders.h>
 using namespace std;

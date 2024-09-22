@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\validate-binary-search-tree"
+* Build using .\build.bat "WEEK9" "validate-binary-search-tree"
 */
 #include <allheaders.h>
 using namespace std;

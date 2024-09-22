@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\course-schedule"
+* Build using .\build.bat "WEEK8" "course-schedule"
 */
 #include <allheaders.h>
 using namespace std;

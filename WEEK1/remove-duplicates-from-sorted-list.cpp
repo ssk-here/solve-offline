@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK1\remove-duplicates-from-sorted-list"
+* Build using .\build.bat "WEEK1" "remove-duplicates-from-sorted-list"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\first-missing-positive"
+* Build using .\build.bat "WEEK10" "first-missing-positive"
 */
 #include <allheaders.h>
 using namespace std;

@@ -54,6 +54,7 @@ public:
     void appendOutput(const std::string& str);
     void appendInput(const std::vector<int>& V);
     void appendInput(const std::vector<int>& V,int &target);
+    void appendInput(const int &m,const int &n);
     void appendOutput(const int & res);
     void appendOutput(const bool & res);
     void appendOutput(const std::vector<int>& V);

@@ -159,6 +159,12 @@ void Output::appendInput(const std::vector<int>& V, int& target) {
     ctr = ctr + ".Input:" + str + "," + std::to_string(target);
     outputData.push_back(ctr);
 }
+void Output::appendInput(const int &m,const int &n){
+    // Appends two integer inputs to the output data with a counter
+    std::string ctr = std::to_string(Output::counter++);
+    ctr = ctr + ".Input:" + std::to_string(m) + "," + std::to_string(n);
+    outputData.push_back(ctr);
+}
 
 void Output::appendOutput(const int& res) {
     // Appends an integer output to the output data

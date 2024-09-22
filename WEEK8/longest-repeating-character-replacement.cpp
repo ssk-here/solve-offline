@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\longest-repeating-character-replacement"
+* Build using .\build.bat "WEEK8" "longest-repeating-character-replacement"
 */
 #include <allheaders.h>
 using namespace std;

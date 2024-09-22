@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\task-scheduler"
+* Build using .\build.bat "WEEK7" "task-scheduler"
 */
 #include <allheaders.h>
 using namespace std;

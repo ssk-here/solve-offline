@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\minimum-number-of-arrows-to-burst-balloons"
+* Build using .\build.bat "WEEK7" "minimum-number-of-arrows-to-burst-balloons"
 */
 #include <allheaders.h>
 using namespace std;

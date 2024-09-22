@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK9\implement-trie-prefix-tree"
+* Build using .\build.bat "WEEK9" "implement-trie-prefix-tree"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-*  Build using .\build.bat "WEEK6\kth-smallest-element-in-a-sorted-matrix"
+*  Build using .\build.bat "WEEK6" "kth-smallest-element-in-a-sorted-matrix"
 */
 #include <allheaders.h>
 using namespace std;

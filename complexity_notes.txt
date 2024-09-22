@@ -374,48 +374,82 @@ Build subsequence with binary search-nlogn
 WEEK 5
 1. Longest Palindromic Substring
 https://leetcode.com/problems/longest-palindromic-substring
+Brute force - n^3
+Expand from center for even and odd- n^2
+Manacher's Algorithm-n
 
 2. Word Break 
 https://leetcode.com/problems/word-break
+DP- n^3 or n^2.m.
+Can use Trie also.
 
 3. Combination Sum IV 
 https://leetcode.com/problems/combination-sum-iv
+Recursion with Memoization - n*target
+or DP - n*target
 
 4. Decode Ways
 https://leetcode.com/problems/decode-ways
+Recursion -  N
+Iterative -N, can also do Iterative with Const space
 
 5. Unique Paths
 https://leetcode.com/problems/unique-paths
+Number of ways = (m+n-2) choose(m-1)
+Recursion/Iterative - m*n
+Factorial can be calculated in log(m+n)
 
 6. Jump Game
 https://leetcode.com/problems/jump-game
+Brute force - 2^n
+DP - n^2
+Iterative - order n - one pass
 
 7. Palindromic Substrings
 https://leetcode.com/problems/palindromic-substrings
+Brute force - n^3
+DP - n^2
+Expand around center - n^2
+Manacher's Algorithm-n
 
 8. Number of Longest Increasing Subsequence
 https://leetcode.com/problems/number-of-longest-increasing-subsequence
+2 DP arrays for length and count - order n^2
 
 9. Partition Equal Subset Sum
 https://leetcode.com/problems/partition-equal-subset-sum
+Recursion - 2^n
+Recursion with Memoization - n*sum
+DP- n*sum
 
 10. Partition to K Equal Sum Subsets
 https://leetcode.com/problems/partition-to-k-equal-sum-subsets
+Recursion with memorization - n x 2^n
+Bitmasking -n x 2^n
 
 11. Best Time to Buy and Sell Stock with Cooldown
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown
+Recursion with Memoization - n^2
+Iterative DP -n
 
 12. Linked List Cycle II
 https://leetcode.com/problems/linked-list-cycle-ii
+Floyd cycle detection algorithm - order n
 
 13. Add Two Numbers
 https://leetcode.com/problems/add-two-numbers
+basic knowledge of carry and sum
+Corner case - carry remaining after summing all digits(example 99+1)
+order m+n
 
 14. Remove Nth Node From End of List
 https://leetcode.com/problems/remove-nth-node-from-end-of-list
+calculate length L and go to (L-N)th node and delete - 2 pass
+use slow and fast ptrs to delete in one pass
 
 15. Sort List
 https://leetcode.com/problems/sort-list
+Merge sort -nlogn
 
 ======================================================================================
 WEEK 6

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK2\invert-binary-tree"
+* Build using .\build.bat "WEEK2" "invert-binary-tree"
 */
 #include <allheaders.h>
 using namespace std;

@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\sort-colors"
+* Build using .\build.bat "WEEK10" "sort-colors"
 */
 #include <allheaders.h>
 using namespace std;

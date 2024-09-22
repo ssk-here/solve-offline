@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\split-a-string-into-the-max-number-of-unique-substrings"
+* Build using .\build.bat "WEEK10" "split-a-string-into-the-max-number-of-unique-substrings"
 */
 #include <allheaders.h>
 using namespace std;

@@ -1,6 +1,6 @@
 @echo off
 REM Sample usage:
-REM  .\build.bat "WEEK3\binary-tree-paths" 
+REM  .\build.bat "WEEK3 binary-tree-paths" 
 
 REM Delete the existing executable file
 REM > del .\WEEK3\binary-tree-paths.exe                                               
@@ -19,12 +19,17 @@ REM Get-ExecutionPolicy
 REM If it’s set to Restricted, you won’t be able to run scripts. You can change it to a less restrictive policy (e.g., RemoteSigned or Unrestricted) using:
 REM Set-ExecutionPolicy RemoteSigned
 
-set MAINFILE=%1
+set MAINFOLDER=%1
+set slug=%2
+
+set MAINFILE=%MAINFOLDER%\%slug%
 set EXEFILE=%MAINFILE%.exe
 set CPPFILE=%MAINFILE%.cpp
-set INPUTFILE=%MAINFILE%_input.txt
-set OUTPUTFILE=%MAINFILE%_output.txt
+set INPUTFILE=%MAINFOLDER%\data\%slug%_input.txt
+set OUTPUTFILE=%MAINFOLDER%\data\%slug%_output.txt
 
+echo fodler=%MAINFOLDER%
+echo mainfile=%MAINFILE%
 echo EXEFILE=%EXEFILE%
 echo CPPFILE=%CPPFILE%
 echo INPUTFILE=%INPUTFILE%

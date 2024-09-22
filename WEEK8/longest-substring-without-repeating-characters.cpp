@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\longest-substring-without-repeating-characters"
+* Build using .\build.bat "WEEK8" "longest-substring-without-repeating-characters"
 */
 #include <allheaders.h>
 using namespace std;

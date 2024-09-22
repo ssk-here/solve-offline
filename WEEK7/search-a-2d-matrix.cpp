@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\search-a-2d-matrix"
+* Build using .\build.bat "WEEK7" "search-a-2d-matrix"
 */
 #include <allheaders.h>
 using namespace std;

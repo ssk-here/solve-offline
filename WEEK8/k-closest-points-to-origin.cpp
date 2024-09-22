@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK8\k-closest-points-to-origin"
+* Build using .\build.bat "WEEK8" "k-closest-points-to-origin"
 */
 #include <allheaders.h>
 using namespace std;

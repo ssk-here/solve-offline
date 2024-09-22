@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\peak-index-in-a-mountain-array"
+* Build using .\build.bat "WEEK7" "peak-index-in-a-mountain-array"
 */
 #include <allheaders.h>
 using namespace std;

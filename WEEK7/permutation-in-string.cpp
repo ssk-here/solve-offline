@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK7\permutation-in-string"
+* Build using .\build.bat "WEEK7" "permutation-in-string"
 */
 #include <allheaders.h>
 using namespace std;

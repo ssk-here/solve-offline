@@ -7,7 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\build.bat "WEEK10\subarray-product-less-than-k"
+* Build using .\build.bat "WEEK10" "subarray-product-less-than-k"
 */
 #include <allheaders.h>
 using namespace std;
