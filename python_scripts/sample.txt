@@ -1,0 +1,5 @@
+~Sample
+https://leetcode.com/problems/contains-duplicate
+https://leetcode.com/problems/missing-number
+https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array
+https://leetcode.com/problems/single-number

@@ -7,6 +7,7 @@
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
+* Build using .\build.bat "WEEK3" "binary-tree-paths"
 */
 #include <allheaders.h>
 using namespace std;
@@ -23,60 +24,17 @@ using namespace std;
  */
 class Solution {
 public:
-    vector<string> ans;
-    void addpath(TreeNode *root,string &path){
-        if(!root->left && !root->right){
-            ans.push_back(path+to_string(root->val));
-        }
-        int l = path.length();
-        path += to_string(root->val) + "->";
-        l = path.length() - l;
-        if(root->left)
-            addpath(root->left,path);
-        if(root->right)
-            addpath(root->right,path);
-        path.erase(path.length()-l);
-    }
     vector<string> binaryTreePaths(TreeNode* root) {
-        ans ={};
-        string path="";
-        addpath(root,path);
-        return ans;
+        
     }
 };
 void Test(const std::string& inputfile, const std::string& outputfile) {
-    InputParser I;
-    Solution solution;
-    Output O;
-    std::vector<std::string> V = I.readInputFile(inputfile);
-    std::vector<std::string> Output;
-    for (auto &input : V) {
-        TreeNode* root = I.buildTree(input);
-        std::vector<std::string> paths = solution.binaryTreePaths(root);
-        O.appendInput(input);
-        for (auto p : paths)
-            O.appendOutput(p);
-    }
-    O.writeOutputFile(outputfile);  
+;    
 }
 
 int main(int argc, char* argv[]) {
-    if (argc != 3) {
-    std::cerr << "Usage: " << argv[0] << " <inputfile> <outputfile>" << std::endl;
-    return 1;
-    }
 
-    std::ifstream infile(argv[1]);
-    if (!infile) {
-    std::cerr << "Could not open input file." << std::endl;
-    return 1;
-    }
-
-    std::ofstream outfile(argv[2]);
-    if (!outfile) {
-    std::cerr << "Could not open output file." << std::endl;
-    return 1;
-    }
+    Common().parseArguments(argc,argv);
 
     Test(argv[1], argv[2]);
 

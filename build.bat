@@ -22,6 +22,9 @@ REM Set-ExecutionPolicy RemoteSigned
 set MAINFOLDER=%1
 set slug=%2
 
+echo mainfolder=%MAINFOLDER%
+echo slug=%slug%
+
 set MAINFILE=%MAINFOLDER%\%slug%
 set EXEFILE=%MAINFILE%.exe
 set CPPFILE=%MAINFILE%.cpp

@@ -6,7 +6,8 @@
             "type": "shell",
             "command": ".\\build.bat",
             "args": [
-                "${fileDirname}\\${fileBasenameNoExtension}"
+                "${fileDirname}",
+                "${fileBasenameNoExtension}"
             ],
             "group": {
                 "kind": "build",

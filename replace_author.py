@@ -63,12 +63,6 @@ def insert_ignored_line(file_path):
 
 #copies all .txt files to data folder
 def copy_txt_files(folder_name):
-  """Copies all .txt files from a given folder to a subfolder named 'data'.
-
-  Args:
-    folder_name: The name of the folder containing the .txt files.
-  """
-
   # Create the 'data' subfolder if it doesn't exist
   data_folder = os.path.join(folder_name, 'data')
   if not os.path.exists(data_folder):
@@ -83,12 +77,6 @@ def copy_txt_files(folder_name):
 
 
 def delete_original_txt_files(folder_name):
-  """Deletes all original .txt files from a given folder, but does not touch files in the 'data' subfolder.
-
-  Args:
-    folder_name: The name of the folder containing the .txt files.
-  """
-
   # Iterate through all files in the given folder
   for file_name in os.listdir(folder_name):
     if file_name.endswith('.txt') and not file_name.startswith('data'):

@@ -3,16 +3,17 @@ import json
 from types import SimpleNamespace
 import os
 import sys
-import pdfkit
+#import pdfkit
+import shutil
 #from weasyprint import HTML
 # inputfile = 'week1'
 
 def create_folder_if_not_exists(folder_name):
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
-        print(f"Folder '{folder_name}' created.")
-    else:
-        print(f"Folder '{folder_name}' already exists.")
+    #     print(f"Folder '{folder_name}' created.")
+    # else:
+    #     print(f"Folder '{folder_name}' already exists.")
 
 
 def create_file_if_not_exists(folder_name,filename,extn):
@@ -56,7 +57,7 @@ def create_leetcode_files(foldername, code, titleslugs, tests):
 * @brief   
 * Time Complexity: 
 * Space Complexity: 
-* Build using .\\build.bat {foldername} {title_slug}
+* Build using .\\build.bat "{foldername}" "{title_slug}"
 */
 #include <allheaders.h>
 using namespace std;
@@ -94,6 +95,28 @@ titleslugs = []
 tests = []
 foldername=""
 
+#copies all .txt files to data folder
+def copy_txt_files(folder_name):
+  # Create the 'data' subfolder if it doesn't exist
+  data_folder = os.path.join(folder_name, 'data')
+  if not os.path.exists(data_folder):
+    os.makedirs(data_folder)
+
+  # Iterate through all files in the given folder
+  for file_name in os.listdir(folder_name):
+    if file_name.endswith('.txt'):
+      source_path = os.path.join(folder_name, file_name)
+      destination_path = os.path.join(data_folder, file_name)
+      shutil.copy(source_path, destination_path)
+
+def delete_original_txt_files(folder_name):
+  # Iterate through all files in the given folder
+  for file_name in os.listdir(folder_name):
+    if file_name.endswith('.txt') and not file_name.startswith('data'):
+      file_path = os.path.join(folder_name, file_name)
+      #print(file_path)
+      os.remove(file_path)
+
 def update_question_links(question_links):
     global inputfile
     with open(inputfile) as f:
@@ -115,10 +138,22 @@ def get_section(section_text):
 def get_question(question_link):
     slug = question_link.split('https://leetcode.com/problems/', 1)[1]
     baseJSON['variables']['titleSlug'] = slug
-    resp = requests.get(graphQLEndpoint, json=baseJSON)
-
-    x = json.loads(resp.text, object_hook=lambda d: SimpleNamespace(**d))
-    print(x)
+    json_data_folder = 'json_data'
+    create_folder_if_not_exists(json_data_folder)
+    json_file_path = os.path.join(json_data_folder, f"{slug}.json")
+    if os.path.exists(json_file_path):
+        with open(json_file_path, 'r') as json_file:
+            resp = json.load(json_file)
+        print(f"Reading from file '{json_file_path}'")
+    else:
+        resp = requests.post(graphQLEndpoint, json=baseJSON).json()
+        print(f"Writing to file '{json_file_path}'")
+        with open(json_file_path, 'w') as json_file:
+            json.dump(resp, json_file, indent=4)
+        with open(json_file_path, 'r') as json_file:
+            resp = json.load(json_file)
+    # x = json.loads(resp, object_hook=lambda d: SimpleNamespace(**d))
+    x = json.loads(json.dumps(resp), object_hook=lambda d: SimpleNamespace(**d))
     StartCode = ""
     for y in x.data.question.codeSnippets:
     # use python3 or python or cpp
@@ -161,6 +196,8 @@ def main():
             continue
     #creates the workspace
     create_leetcode_files(foldername, code, titleslugs, tests)
+    copy_txt_files(foldername)
+    delete_original_txt_files(foldername)
     #creates html and pdf
     global htmlstr
     global contents_str
@@ -169,11 +206,12 @@ def main():
     with open(outputhtml, 'wb') as file:
         file.write(htmlstr.encode('utf-8'))
     htmlstr += '</div>'
-    from xhtml2pdf import pisa
-    with open(outputpdf, "w+b") as pdf_file:
-        pisa.CreatePDF(htmlstr, dest=pdf_file)
+    # write pdf
+    # from xhtml2pdf import pisa
+    # with open(outputpdf, "w+b") as pdf_file:
+    #     pisa.CreatePDF(htmlstr, dest=pdf_file)
     #writes html to pdf
-    print("PDF created successfully!")
+    #print("PDF created successfully!")
     #HTML(string=htmlstr).write_pdf(outputpdf)
 
 if __name__=='__main__':

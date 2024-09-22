@@ -12,6 +12,13 @@
 
 TODO
 (vector,int->circular LL) -> bool
+(vector->LL,vector->LL) -> LL->vector
+(vector->LL) -> LL->int
+range-sum-query-vector of titles followed by values
+(vector->LL) -> LL->vector
+(vector->LL,int) -> LL->vector
+
+
 
 
 -------------------------------------------------------------------------
