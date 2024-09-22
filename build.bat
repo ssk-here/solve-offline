@@ -1,6 +1,6 @@
 @echo off
 REM Sample usage:
-REM  .\build.bat "WEEK3 binary-tree-paths" 
+REM  .\build.bat "WEEK3" "binary-tree-paths" 
 
 REM Delete the existing executable file
 REM > del .\WEEK3\binary-tree-paths.exe                                               
@@ -10,7 +10,7 @@ REM > make MAINFILE=.\WEEK3\binary-tree-paths
 REM g++ -Iinclude -Wall -g -o WEEK3/binary-tree-paths.exe WEEK3\binary-tree-paths.cpp
 
 REM Run the executable with input and output files
-REM > .\WEEK3\binary-tree-paths.exe .\WEEK3\binary-tree-paths_input.txt .\WEEK3\binary-tree-paths_output.txt
+REM > .\WEEK3\binary-tree-paths.exe .\WEEK3\data\binary-tree-paths_input.txt .\WEEK3\data\binary-tree-paths_output.txt
 
 REM Ensure g++ is installed and its path is part of environment variable PATH
 REM Ensure permissions are set to execute this batch file.
@@ -28,7 +28,7 @@ set CPPFILE=%MAINFILE%.cpp
 set INPUTFILE=%MAINFOLDER%\data\%slug%_input.txt
 set OUTPUTFILE=%MAINFOLDER%\data\%slug%_output.txt
 
-echo fodler=%MAINFOLDER%
+echo folder=%MAINFOLDER%
 echo mainfile=%MAINFILE%
 echo EXEFILE=%EXEFILE%
 echo CPPFILE=%CPPFILE%
