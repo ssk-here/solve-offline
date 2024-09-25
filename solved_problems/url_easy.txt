@@ -1,0 +1,3 @@
+https://leetcode.com/problemset/?difficulty=EASY&page=1&status=AC
+https://leetcode.com/problemset/?difficulty=EASY&page=2&status=AC
+https://leetcode.com/problemset/?difficulty=EASY&page=3&status=AC

@@ -11,7 +11,7 @@
 */
 #include <allheaders.h>
 using namespace std;
-class Solution1 {
+class Solution2 {
 public:
     int uniquePaths(int m, int n) {
         vector<vector<int>> grid(m,vector<int>(n));
@@ -28,7 +28,7 @@ public:
     }
 
 };
-class Solution {
+class Solution1 {
 public:
     int uniquePaths(int m, int n) {
         if(m==1 || n==1)
@@ -57,6 +57,44 @@ public:
     }
 
 };
+
+class Solution {
+public:
+    int uniquePaths(int m, int n) {
+       if(m==1 || n==1)
+            return 1;
+        if(m<n)
+            swap(m,n);
+        //we have below from [m,m+n-2] [2:n-1] . set n = n-1. then [m:m+n-1]/[2:n]
+        n--;
+        long long answer = 1;
+        vector<int> values(n);
+        int index=0;
+        for (int i = 0; i < n; ++i) {
+            values[i] = m + i;
+            if((m+i)%n == 0)
+                index=i;
+        }
+        int divisor = n,quotient;
+        while(divisor>1){
+            if(values[index]%divisor != 0)
+                break;
+            quotient = values[index]/divisor;
+            values[index] = quotient;
+            divisor--;
+            index = index-quotient;
+            if(index<0)
+                index += (-index)*divisor;
+            index = index%divisor;
+        }
+        
+        for(int k=0;k<n;k++)
+            answer = answer*values[k];
+        while(divisor>1)
+            answer = answer/(divisor--);
+        return answer;
+    }
+};
 void Test(const std::string& inputfile, const std::string& outputfile) {
     InputParser Ip;
     Output Op;
@@ -77,6 +115,9 @@ int main(int argc, char* argv[]) {
 	Common().parseArguments(argc,argv);
 
     Test(argv[1], argv[2]);
+    // int x=-3, n =4;
+    // int val = x%n;
+    // cout<<"val is "<<val<<endl;
 
     return 0;
 }

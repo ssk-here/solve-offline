@@ -1,0 +1,15 @@
+Find the Index of the First Occurrence in a String
+Evaluate Boolean Binary Tree
+Largest Local Values in a Matrix
+Special Array I
+Find the Winning Player in Coin Game
+Coin Change II
+Equal Row and Column Pairs
+Remove Nodes From Linked List
+Minimum Operations to Make All Array Elements Equal
+Insert Greatest Common Divisors in Linked List
+Double a Number Represented as a Linked List
+Find the Length of the Longest Common Prefix
+Maximize Happiness of Selected Children
+Right Triangles
+Delete Nodes From Linked List Present in Array
