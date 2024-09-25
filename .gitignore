@@ -1,6 +1,7 @@
 #ignore json_data folder
 json_data/
 **/json_data/
+json_data/**
 
 # Prerequisites
 *.d
