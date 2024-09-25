@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Largest Local Values in a Matrix</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <hr>
+<h1 id="largest-local-values-in-a-matrix">Largest Local Values in a Matrix</h1>
+<p><strong>Difficulty:</strong> Easy</p>
+<p><strong>Link:</strong> <a href="https://leetcode.com/problems/largest-local-values-in-a-matrix">https://leetcode.com/problems/largest-local-values-in-a-matrix</a></p>
+<h2 id="content">Content</h2>
+<p>You are given an <code>n x n</code> integer matrix <code>grid</code>.</p>
+<p>Generate an integer matrix <code>maxLocal</code> of size <code>(n - 2) x (n - 2)</code> such that:</p>
+<ul>
+	<li><code>maxLocal[i][j]</code> is equal to the <strong>largest</strong> value of the <code>3 x 3</code> matrix in <code>grid</code> centered around row <code>i + 1</code> and column <code>j + 1</code>.</li>
+</ul>
+<p>In other words, we want to find the largest value in every contiguous <code>3 x 3</code> matrix in <code>grid</code>.</p>
+<p>Return <em>the generated matrix</em>.</p>
+<p>&nbsp;</p>
+<p><strong class="example">
+<h2 id="c-code">C++ Code</h2>
+<pre><code class="language-cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> {
+<span class="hljs-keyword">public</span>:
+    vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt; <span class="hljs-built_in">largestLocal</span>(vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; grid) {
+        
+    }
+};
+</code></pre>
+<h2 id="notes">Notes</h2>
+<!--
+Add your notes here.
+
+-->
+<h2 id="other-solutions">Other Solutions</h2>
+<pre><code class="language-cpp"><span class="hljs-comment">// Add another solution here</span>
+</code></pre>
+<hr>
+<h1 id="special-array-i">Special Array I</h1>
+<p><strong>Difficulty:</strong> Easy</p>
+<p><strong>Link:</strong> <a href="https://leetcode.com/problems/special-array-i">https://leetcode.com/problems/special-array-i</a></p>
+<h2 id="content-1">Content</h2>
+<p>An array is considered <strong>special</strong> if every pair of its adjacent elements contains two numbers with different parity.<!-- notionvc: e6bed0fa-c67d-43a7-81b4-99fb85b99e98 --></p>
+<p>You are given an array of integers <code>nums</code>. Return <code>true</code> if <code>nums</code> is a <strong>special</strong> array, otherwise, return <code>false</code>.</p>
+<p>&nbsp;</p>
+<p><strong class="example">
+<h2 id="c-code-1">C++ Code</h2>
+<pre><code class="language-cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function"><span class="hljs-type">bool</span> <span class="hljs-title">isArraySpecial</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; nums)</span> </span>{
+        
+    }
+};
+</code></pre>
+<h2 id="notes-1">Notes</h2>
+<!--
+Add your notes here.
+
+-->
+<h2 id="other-solutions-1">Other Solutions</h2>
+<pre><code class="language-cpp"><span class="hljs-comment">// Add another solution here</span>
+</code></pre>
+<hr>
+<h1 id="find-the-winning-player-in-coin-game">Find the Winning Player in Coin Game</h1>
+<p><strong>Difficulty:</strong> Easy</p>
+<p><strong>Link:</strong> <a href="https://leetcode.com/problems/find-the-winning-player-in-coin-game">https://leetcode.com/problems/find-the-winning-player-in-coin-game</a></p>
+<h2 id="content-2">Content</h2>
+<p>You are given two <strong>positive</strong> integers <code>x</code> and <code>y</code>, denoting the number of coins with values 75 and 10 <em>respectively</em>.</p>
+<p>Alice and Bob are playing a game. Each turn, starting with <strong>Alice</strong>, the player must pick up coins with a <strong>total</strong> value 115. If the player is unable to do so, they <strong>lose</strong> the game.</p>
+<p>Return the <em>name</em> of the player who wins the game if both players play <strong>optimally</strong>.</p>
+<p>&nbsp;</p>
+<p><strong class="example">
+<h2 id="c-code-2">C++ Code</h2>
+<pre><code class="language-cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> {
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-function">string <span class="hljs-title">losingPlayer</span><span class="hljs-params">(<span class="hljs-type">int</span> x, <span class="hljs-type">int</span> y)</span> </span>{
+        
+    }
+};
+</code></pre>
+<h2 id="notes-2">Notes</h2>
+<!--
+Add your notes here.
+
+-->
+<h2 id="other-solutions-2">Other Solutions</h2>
+<pre><code class="language-cpp"><span class="hljs-comment">// Add another solution here</span>
+</code></pre>
+
+            
+            
+        </body>
+        </html>
