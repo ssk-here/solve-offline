@@ -454,32 +454,35 @@ Merge sort -nlogn
 ======================================================================================
 WEEK 6
 1. Reorder List 
+    Get to middle , reverse and interleave,order n
 2. Clone Graph 
+    clone using deep copy, keep track of created nodes using a hashmap (from val to Node*),order n
 3. Pacific Atlantic Water Flow 
+    Do a BFS starting from all boundary cells of one ocean and include cells greater than it.
+    order n. 
 4. Number of Islands
+    DFS or BFS
 5. Graph Valid Tree
+    Union Find - check for both acyclic and connected. - order V+E
 6. Number of Connected Components in an Undirected Graph
+    Union Find - order V+E
 7. Reverse Linked List II
+    order n
 8. Rotate List
+    Use slow and fast to find kth node from end -order n
 9. Swap Nodes in Pairs
+    order n
 10. Odd Even Linked List
+    order n, two pointers
 11. Kth Smallest Element in a Sorted Matrix
+    MInheap - nlogk
+    binary search -nlog(Max-min)
 12. Find K Pairs with Smallest Sums
+    Customised Minheap - klogn, space-n.
 13. Merge Intervals
+    sort and merge. nlogn
 14. Interval List Intersections
+    write functions for checking if intervals intersect,and merging intervals, and returning remaining interval.
 15. Non-overlapping Intervals
-https://leetcode.com/problems/reorder-list
-https://leetcode.com/problems/clone-graph
-https://leetcode.com/problems/pacific-atlantic-water-flow
-https://leetcode.com/problems/number-of-islands
-https://leetcode.com/problems/graph-valid-tree
-https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph
-https://leetcode.com/problems/reverse-linked-list-ii
-https://leetcode.com/problems/rotate-list
-https://leetcode.com/problems/swap-nodes-in-pairs
-https://leetcode.com/problems/odd-even-linked-list
-https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix
-https://leetcode.com/problems/find-k-pairs-with-smallest-sums
-https://leetcode.com/problems/merge-intervals
-https://leetcode.com/problems/interval-list-intersections
-https://leetcode.com/problems/non-overlapping-intervals
+    sort based on end-points of intervals -nlogn
+
