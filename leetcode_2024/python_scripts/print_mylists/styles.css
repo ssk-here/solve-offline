@@ -1,0 +1,27 @@
+@page {
+  size: A4 portrait;
+  margin: 0.5in;
+}
+
+body {
+  display: flex;
+}
+
+.left-part {
+  flex: 1;
+}
+
+.right-part {
+  flex: 1;
+  border-left: 2px solid black; /* Increase border thickness */
+  padding-left: 10px;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
