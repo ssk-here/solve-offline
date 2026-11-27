@@ -1,0 +1,751 @@
+<style>@page {
+  size: A4 portrait;
+  margin: 0.5in;
+}
+
+body {
+  display: flex;
+}
+
+.left-part {
+  flex: 1;
+}
+
+.right-part {
+  flex: 1;
+  border-left: 2px solid black; /* Increase border thickness */
+  padding-left: 10px;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+</style>
+<div><div><h2>2121.Find if Path Exists in Graph</h2><h3>Easy</h3><p>There is a <strong>bi-directional</strong> graph with <code>n</code> vertices, where each vertex is labeled from <code>0</code> to <code>n - 1</code> (<strong>inclusive</strong>). The edges in the graph are represented as a 2D integer array <code>edges</code>, where each <code>edges[i] = [u<sub>i</sub>, v<sub>i</sub>]</code> denotes a bi-directional edge between vertex <code>u<sub>i</sub></code> and vertex <code>v<sub>i</sub></code>. Every vertex pair is connected by <strong>at most one</strong> edge, and no vertex has an edge to itself.</p>
+<p>You want to determine if there is a <strong>valid path</strong> that exists from vertex <code>source</code> to vertex <code>destination</code>.</p>
+<p>Given <code>edges</code> and the integers <code>n</code>, <code>source</code>, and <code>destination</code>, return <code>true</code><em> if there is a <strong>valid path</strong> from </em><code>source</code><em> to </em><code>destination</code><em>, or </em><code>false</code><em> otherwise</em><em>.</em></p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/08/14/validpath-ex1.png" style="width: 141px; height: 121px;" />
+<pre>
+<strong>Input:</strong> n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2
+<strong>Output:</strong> true
+<strong>Explanation:</strong> There are two paths from vertex 0 to vertex 2:
+- 0 &rarr; 1 &rarr; 2
+- 0 &rarr; 2
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/08/14/validpath-ex2.png" style="width: 281px; height: 141px;" />
+<pre>
+<strong>Input:</strong> n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5
+<strong>Output:</strong> false
+<strong>Explanation:</strong> There is no path from vertex 0 to vertex 5.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= n &lt;= 2 * 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= edges.length &lt;= 2 * 10<sup>5</sup></code></li>
+	<li><code>edges[i].length == 2</code></li>
+	<li><code>0 &lt;= u<sub>i</sub>, v<sub>i</sub> &lt;= n - 1</code></li>
+	<li><code>u<sub>i</sub> != v<sub>i</sub></code></li>
+	<li><code>0 &lt;= source, destination &lt;= n - 1</code></li>
+	<li>There are no duplicate edges.</li>
+	<li>There are no self edges.</li>
+</ul>
+class Solution {
+public:
+    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>813.All Paths From Source to Target</h2><h3>Medium</h3><p>Given a directed acyclic graph (<strong>DAG</strong>) of <code>n</code> nodes labeled from <code>0</code> to <code>n - 1</code>, find all possible paths from node <code>0</code> to node <code>n - 1</code> and return them in <strong>any order</strong>.</p>
+<p>The graph is given as follows: <code>graph[i]</code> is a list of all nodes you can visit from node <code>i</code> (i.e., there is a directed edge from node <code>i</code> to node <code>graph[i][j]</code>).</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/28/all_1.jpg" style="width: 242px; height: 242px;" />
+<pre>
+<strong>Input:</strong> graph = [[1,2],[3],[3],[]]
+<strong>Output:</strong> [[0,1,3],[0,2,3]]
+<strong>Explanation:</strong> There are two paths: 0 -&gt; 1 -&gt; 3 and 0 -&gt; 2 -&gt; 3.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/09/28/all_2.jpg" style="width: 423px; height: 301px;" />
+<pre>
+<strong>Input:</strong> graph = [[4,3,1],[3,2,4],[3],[4],[]]
+<strong>Output:</strong> [[0,4],[0,3,4],[0,1,3,4],[0,1,2,3,4],[0,1,4]]
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>n == graph.length</code></li>
+	<li><code>2 &lt;= n &lt;= 15</code></li>
+	<li><code>0 &lt;= graph[i][j] &lt; n</code></li>
+	<li><code>graph[i][j] != i</code> (i.e., there will be no self-loops).</li>
+	<li>All the elements of <code>graph[i]</code> are <strong>unique</strong>.</li>
+	<li>The input graph is <strong>guaranteed</strong> to be a <strong>DAG</strong>.</li>
+</ul>
+class Solution {
+public:
+    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>547.Number of Provinces</h2><h3>Medium</h3><p>There are <code>n</code> cities. Some of them are connected, while some are not. If city <code>a</code> is connected directly with city <code>b</code>, and city <code>b</code> is connected directly with city <code>c</code>, then city <code>a</code> is connected indirectly with city <code>c</code>.</p>
+<p>A <strong>province</strong> is a group of directly or indirectly connected cities and no other cities outside of the group.</p>
+<p>You are given an <code>n x n</code> matrix <code>isConnected</code> where <code>isConnected[i][j] = 1</code> if the <code>i<sup>th</sup></code> city and the <code>j<sup>th</sup></code> city are directly connected, and <code>isConnected[i][j] = 0</code> otherwise.</p>
+<p>Return <em>the total number of <strong>provinces</strong></em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/24/graph1.jpg" style="width: 222px; height: 142px;" />
+<pre>
+<strong>Input:</strong> isConnected = [[1,1,0],[1,1,0],[0,0,1]]
+<strong>Output:</strong> 2
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/12/24/graph2.jpg" style="width: 222px; height: 142px;" />
+<pre>
+<strong>Input:</strong> isConnected = [[1,0,0],[0,1,0],[0,0,1]]
+<strong>Output:</strong> 3
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= n &lt;= 200</code></li>
+	<li><code>n == isConnected.length</code></li>
+	<li><code>n == isConnected[i].length</code></li>
+	<li><code>isConnected[i][j]</code> is <code>1</code> or <code>0</code>.</li>
+	<li><code>isConnected[i][i] == 1</code></li>
+	<li><code>isConnected[i][j] == isConnected[j][i]</code></li>
+</ul>
+class Solution {
+public:
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>200.Number of Islands</h2><h3>Medium</h3><p>Given an <code>m x n</code> 2D binary grid <code>grid</code> which represents a map of <code>&#39;1&#39;</code>s (land) and <code>&#39;0&#39;</code>s (water), return <em>the number of islands</em>.</p>
+<p>An <strong>island</strong> is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [
+  [&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;1&quot;,&quot;0&quot;],
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;],
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;]
+]
+<strong>Output:</strong> 1
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;1&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;0&quot;,&quot;0&quot;,&quot;1&quot;,&quot;0&quot;,&quot;0&quot;],
+  [&quot;0&quot;,&quot;0&quot;,&quot;0&quot;,&quot;1&quot;,&quot;1&quot;]
+]
+<strong>Output:</strong> 3
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>m == grid.length</code></li>
+	<li><code>n == grid[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 300</code></li>
+	<li><code>grid[i][j]</code> is <code>&#39;0&#39;</code> or <code>&#39;1&#39;</code>.</li>
+</ul>
+class Solution {
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>463.Island Perimeter</h2><h3>Easy</h3><p>You are given <code>row x col</code> <code>grid</code> representing a map where <code>grid[i][j] = 1</code> represents&nbsp;land and <code>grid[i][j] = 0</code> represents water.</p>
+<p>Grid cells are connected <strong>horizontally/vertically</strong> (not diagonally). The <code>grid</code> is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).</p>
+<p>The island doesn&#39;t have &quot;lakes&quot;, meaning the water inside isn&#39;t connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don&#39;t exceed 100. Determine the perimeter of the island.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img src="https://assets.leetcode.com/uploads/2018/10/12/island.png" style="width: 221px; height: 213px;" />
+<pre>
+<strong>Input:</strong> grid = [[0,1,0,0],[1,1,1,0],[0,1,0,0],[1,1,0,0]]
+<strong>Output:</strong> 16
+<strong>Explanation:</strong> The perimeter is the 16 yellow stripes in the image above.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[1]]
+<strong>Output:</strong> 4
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[1,0]]
+<strong>Output:</strong> 4
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>row == grid.length</code></li>
+	<li><code>col == grid[i].length</code></li>
+	<li><code>1 &lt;= row, col &lt;= 100</code></li>
+	<li><code>grid[i][j]</code> is <code>0</code> or <code>1</code>.</li>
+	<li>There is exactly one island in <code>grid</code>.</li>
+</ul>
+class Solution {
+public:
+    int islandPerimeter(vector<vector<int>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>417.Pacific Atlantic Water Flow</h2><h3>Medium</h3><p>There is an <code>m x n</code> rectangular island that borders both the <strong>Pacific Ocean</strong> and <strong>Atlantic Ocean</strong>. The <strong>Pacific Ocean</strong> touches the island&#39;s left and top edges, and the <strong>Atlantic Ocean</strong> touches the island&#39;s right and bottom edges.</p>
+<p>The island is partitioned into a grid of square cells. You are given an <code>m x n</code> integer matrix <code>heights</code> where <code>heights[r][c]</code> represents the <strong>height above sea level</strong> of the cell at coordinate <code>(r, c)</code>.</p>
+<p>The island receives a lot of rain, and the rain water can flow to neighboring cells directly north, south, east, and west if the neighboring cell&#39;s height is <strong>less than or equal to</strong> the current cell&#39;s height. Water can flow from any cell adjacent to an ocean into the ocean.</p>
+<p>Return <em>a <strong>2D list</strong> of grid coordinates </em><code>result</code><em> where </em><code>result[i] = [r<sub>i</sub>, c<sub>i</sub>]</code><em> denotes that rain water can flow from cell </em><code>(r<sub>i</sub>, c<sub>i</sub>)</code><em> to <strong>both</strong> the Pacific and Atlantic oceans</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/06/08/waterflow-grid.jpg" style="width: 400px; height: 400px;" />
+<pre>
+<strong>Input:</strong> heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]
+<strong>Output:</strong> [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]
+<strong>Explanation:</strong> The following cells can flow to the Pacific and Atlantic oceans, as shown below:
+[0,4]: [0,4] -&gt; Pacific Ocean 
+&nbsp;      [0,4] -&gt; Atlantic Ocean
+[1,3]: [1,3] -&gt; [0,3] -&gt; Pacific Ocean 
+&nbsp;      [1,3] -&gt; [1,4] -&gt; Atlantic Ocean
+[1,4]: [1,4] -&gt; [1,3] -&gt; [0,3] -&gt; Pacific Ocean 
+&nbsp;      [1,4] -&gt; Atlantic Ocean
+[2,2]: [2,2] -&gt; [1,2] -&gt; [0,2] -&gt; Pacific Ocean 
+&nbsp;      [2,2] -&gt; [2,3] -&gt; [2,4] -&gt; Atlantic Ocean
+[3,0]: [3,0] -&gt; Pacific Ocean 
+&nbsp;      [3,0] -&gt; [4,0] -&gt; Atlantic Ocean
+[3,1]: [3,1] -&gt; [3,0] -&gt; Pacific Ocean 
+&nbsp;      [3,1] -&gt; [4,1] -&gt; Atlantic Ocean
+[4,0]: [4,0] -&gt; Pacific Ocean 
+       [4,0] -&gt; Atlantic Ocean
+Note that there are other possible paths for these cells to flow to the Pacific and Atlantic oceans.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> heights = [[1]]
+<strong>Output:</strong> [[0,0]]
+<strong>Explanation:</strong> The water can flow from the only cell to the Pacific and Atlantic oceans.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>m == heights.length</code></li>
+	<li><code>n == heights[r].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 200</code></li>
+	<li><code>0 &lt;= heights[r][c] &lt;= 10<sup>5</sup></code></li>
+</ul>
+class Solution {
+public:
+    vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>695.Max Area of Island</h2><h3>Medium</h3><p>You are given an <code>m x n</code> binary matrix <code>grid</code>. An island is a group of <code>1</code>&#39;s (representing land) connected <strong>4-directionally</strong> (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.</p>
+<p>The <strong>area</strong> of an island is the number of cells with a value <code>1</code> in the island.</p>
+<p>Return <em>the maximum <strong>area</strong> of an island in </em><code>grid</code>. If there is no island, return <code>0</code>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/05/01/maxarea1-grid.jpg" style="width: 500px; height: 310px;" />
+<pre>
+<strong>Input:</strong> grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> The answer is not 11, because the island must be connected 4-directionally.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[0,0,0,0,0,0,0,0]]
+<strong>Output:</strong> 0
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>m == grid.length</code></li>
+	<li><code>n == grid[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 50</code></li>
+	<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
+</ul>
+class Solution {
+public:
+    int maxAreaOfIsland(vector<vector<int>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>733.Flood Fill</h2><h3>Easy</h3><p>An image is represented by an <code>m x n</code> integer grid <code>image</code> where <code>image[i][j]</code> represents the pixel value of the image.</p>
+<p>You are also given three integers <code>sr</code>, <code>sc</code>, and <code>color</code>. You should perform a <strong>flood fill</strong> on the image starting from the pixel <code>image[sr][sc]</code>.</p>
+<p>To perform a <strong>flood fill</strong>, consider the starting pixel, plus any pixels connected <strong>4-directionally</strong> to the starting pixel of the same color as the starting pixel, plus any pixels connected <strong>4-directionally</strong> to those pixels (also with the same color), and so on. Replace the color of all of the aforementioned pixels with <code>color</code>.</p>
+<p>Return <em>the modified image after performing the flood fill</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg" style="width: 613px; height: 253px;" />
+<pre>
+<strong>Input:</strong> image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2
+<strong>Output:</strong> [[2,2,2],[2,2,0],[2,0,1]]
+<strong>Explanation:</strong> From the center of the image with position (sr, sc) = (1, 1) (i.e., the red pixel), all pixels connected by a path of the same color as the starting pixel (i.e., the blue pixels) are colored with the new color.
+Note the bottom corner is not colored 2, because it is not 4-directionally connected to the starting pixel.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0
+<strong>Output:</strong> [[0,0,0],[0,0,0]]
+<strong>Explanation:</strong> The starting pixel is already colored 0, so no changes are made to the image.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>m == image.length</code></li>
+	<li><code>n == image[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 50</code></li>
+	<li><code>0 &lt;= image[i][j], color &lt; 2<sup>16</sup></code></li>
+	<li><code>0 &lt;= sr &lt; m</code></li>
+	<li><code>0 &lt;= sc &lt; n</code></li>
+</ul>
+class Solution {
+public:
+    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>820.Find Eventual Safe States</h2><h3>Medium</h3><p>There is a directed graph of <code>n</code> nodes with each node labeled from <code>0</code> to <code>n - 1</code>. The graph is represented by a <strong>0-indexed</strong> 2D integer array <code>graph</code> where <code>graph[i]</code> is an integer array of nodes adjacent to node <code>i</code>, meaning there is an edge from node <code>i</code> to each node in <code>graph[i]</code>.</p>
+<p>A node is a <strong>terminal node</strong> if there are no outgoing edges. A node is a <strong>safe node</strong> if every possible path starting from that node leads to a <strong>terminal node</strong> (or another safe node).</p>
+<p>Return <em>an array containing all the <strong>safe nodes</strong> of the graph</em>. The answer should be sorted in <strong>ascending</strong> order.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="Illustration of graph" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/03/17/picture1.png" style="height: 171px; width: 600px;" />
+<pre>
+<strong>Input:</strong> graph = [[1,2],[2,3],[5],[0],[5],[],[]]
+<strong>Output:</strong> [2,4,5,6]
+<strong>Explanation:</strong> The given graph is shown above.
+Nodes 5 and 6 are terminal nodes as there are no outgoing edges from either of them.
+Every path starting at nodes 2, 4, 5, and 6 all lead to either node 5 or 6.</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]
+<strong>Output:</strong> [4]
+<strong>Explanation:</strong>
+Only node 4 is a terminal node, and every path starting at node 4 leads to node 4.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>n == graph.length</code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= graph[i].length &lt;= n</code></li>
+	<li><code>0 &lt;= graph[i][j] &lt;= n - 1</code></li>
+	<li><code>graph[i]</code> is sorted in a strictly increasing order.</li>
+	<li>The graph may contain self-loops.</li>
+	<li>The number of edges in the graph will be in the range <code>[1, 4 * 10<sup>4</sup>]</code>.</li>
+</ul>
+class Solution {
+public:
+    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>871.Keys and Rooms</h2><h3>Medium</h3><p>There are <code>n</code> rooms labeled from <code>0</code> to <code>n - 1</code>&nbsp;and all the rooms are locked except for room <code>0</code>. Your goal is to visit all the rooms. However, you cannot enter a locked room without having its key.</p>
+<p>When you visit a room, you may find a set of <strong>distinct keys</strong> in it. Each key has a number on it, denoting which room it unlocks, and you can take all of them with you to unlock the other rooms.</p>
+<p>Given an array <code>rooms</code> where <code>rooms[i]</code> is the set of keys that you can obtain if you visited room <code>i</code>, return <code>true</code> <em>if you can visit <strong>all</strong> the rooms, or</em> <code>false</code> <em>otherwise</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<pre>
+<strong>Input:</strong> rooms = [[1],[2],[3],[]]
+<strong>Output:</strong> true
+<strong>Explanation:</strong> 
+We visit room 0 and pick up key 1.
+We then visit room 1 and pick up key 2.
+We then visit room 2 and pick up key 3.
+We then visit room 3.
+Since we were able to visit every room, we return true.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> rooms = [[1,3],[3,0,1],[2],[0]]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> We can not enter room number 2 since the only key that unlocks it is in that room.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>n == rooms.length</code></li>
+	<li><code>2 &lt;= n &lt;= 1000</code></li>
+	<li><code>0 &lt;= rooms[i].length &lt;= 1000</code></li>
+	<li><code>1 &lt;= sum(rooms[i].length) &lt;= 3000</code></li>
+	<li><code>0 &lt;= rooms[i][j] &lt; n</code></li>
+	<li>All the values of <code>rooms[i]</code> are <strong>unique</strong>.</li>
+</ul>
+class Solution {
+public:
+    bool canVisitAllRooms(vector<vector<int>>& rooms) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1073.Number of Enclaves</h2><h3>Medium</h3><p>You are given an <code>m x n</code> binary matrix <code>grid</code>, where <code>0</code> represents a sea cell and <code>1</code> represents a land cell.</p>
+<p>A <strong>move</strong> consists of walking from one land cell to another adjacent (<strong>4-directionally</strong>) land cell or walking off the boundary of the <code>grid</code>.</p>
+<p>Return <em>the number of land cells in</em> <code>grid</code> <em>for which we cannot walk off the boundary of the grid in any number of <strong>moves</strong></em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/enclaves1.jpg" style="width: 333px; height: 333px;" />
+<pre>
+<strong>Input:</strong> grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> There are three 1s that are enclosed by 0s, and one 1 that is not enclosed because its on the boundary.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/enclaves2.jpg" style="width: 333px; height: 333px;" />
+<pre>
+<strong>Input:</strong> grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> All 1s are either on the boundary or can reach the boundary.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>m == grid.length</code></li>
+	<li><code>n == grid[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 500</code></li>
+	<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
+</ul>
+class Solution {
+public:
+    int numEnclaves(vector<vector<int>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>971.Shortest Bridge</h2><h3>Medium</h3><p>You are given an <code>n x n</code> binary matrix <code>grid</code> where <code>1</code> represents land and <code>0</code> represents water.</p>
+<p>An <strong>island</strong> is a 4-directionally connected group of <code>1</code>&#39;s not connected to any other <code>1</code>&#39;s. There are <strong>exactly two islands</strong> in <code>grid</code>.</p>
+<p>You may change <code>0</code>&#39;s to <code>1</code>&#39;s to connect the two islands to form <strong>one island</strong>.</p>
+<p>Return <em>the smallest number of </em><code>0</code><em>&#39;s you must flip to connect the two islands</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[0,1],[1,0]]
+<strong>Output:</strong> 1
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[0,1,0],[0,0,0],[0,0,1]]
+<strong>Output:</strong> 2
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]
+<strong>Output:</strong> 1
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>n == grid.length == grid[i].length</code></li>
+	<li><code>2 &lt;= n &lt;= 100</code></li>
+	<li><code>grid[i][j]</code> is either <code>0</code> or <code>1</code>.</li>
+	<li>There are exactly two islands in <code>grid</code>.</li>
+</ul>
+class Solution {
+public:
+    int shortestBridge(vector<vector<int>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1171.Shortest Path in Binary Matrix</h2><h3>Medium</h3><p>Given an <code>n x n</code> binary matrix <code>grid</code>, return <em>the length of the shortest <strong>clear path</strong> in the matrix</em>. If there is no clear path, return <code>-1</code>.</p>
+<p>A <strong>clear path</strong> in a binary matrix is a path from the <strong>top-left</strong> cell (i.e., <code>(0, 0)</code>) to the <strong>bottom-right</strong> cell (i.e., <code>(n - 1, n - 1)</code>) such that:</p>
+<ul>
+	<li>All the visited cells of the path are <code>0</code>.</li>
+	<li>All the adjacent cells of the path are <strong>8-directionally</strong> connected (i.e., they are different and they share an edge or a corner).</li>
+</ul>
+<p>The <strong>length of a clear path</strong> is the number of visited cells of this path.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/example1_1.png" style="width: 500px; height: 234px;" />
+<pre>
+<strong>Input:</strong> grid = [[0,1],[1,0]]
+<strong>Output:</strong> 2
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/18/example2_1.png" style="height: 216px; width: 500px;" />
+<pre>
+<strong>Input:</strong> grid = [[0,0,0],[1,1,0],[1,1,0]]
+<strong>Output:</strong> 4
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[1,0,0],[1,1,0],[1,1,0]]
+<strong>Output:</strong> -1
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>n == grid.length</code></li>
+	<li><code>n == grid[i].length</code></li>
+	<li><code>1 &lt;= n &lt;= 100</code></li>
+	<li><code>grid[i][j] is 0 or 1</code></li>
+</ul>
+class Solution {
+public:
+    int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1380.Number of Closed Islands</h2><h3>Medium</h3><p>Given a 2D&nbsp;<code>grid</code> consists of <code>0s</code> (land)&nbsp;and <code>1s</code> (water).&nbsp; An <em>island</em> is a maximal 4-directionally connected group of <code><font face="monospace">0</font>s</code> and a <em>closed island</em>&nbsp;is an island <strong>totally</strong>&nbsp;(all left, top, right, bottom) surrounded by <code>1s.</code></p>
+<p>Return the number of <em>closed islands</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2019/10/31/sample_3_1610.png" style="width: 240px; height: 120px;" /></p>
+<pre>
+<strong>Input:</strong> grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> 
+Islands in gray are closed because they are completely surrounded by water (group of 1s).</pre>
+<p><strong class="example">Example 2:</strong></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2019/10/31/sample_4_1610.png" style="width: 160px; height: 80px;" /></p>
+<pre>
+<strong>Input:</strong> grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]
+<strong>Output:</strong> 1
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> grid = [[1,1,1,1,1,1,1],
+&nbsp;              [1,0,0,0,0,0,1],
+&nbsp;              [1,0,1,1,1,0,1],
+&nbsp;              [1,0,1,0,1,0,1],
+&nbsp;              [1,0,1,1,1,0,1],
+&nbsp;              [1,0,0,0,0,0,1],
+               [1,1,1,1,1,1,1]]
+<strong>Output:</strong> 2
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= grid.length, grid[0].length &lt;= 100</code></li>
+	<li><code>0 &lt;= grid[i][j] &lt;=1</code></li>
+</ul>
+class Solution {
+public:
+    int closedIsland(vector<vector<int>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1442.Number of Operations to Make Network Connected</h2><h3>Medium</h3><p>There are <code>n</code> computers numbered from <code>0</code> to <code>n - 1</code> connected by ethernet cables <code>connections</code> forming a network where <code>connections[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> represents a connection between computers <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code>. Any computer can reach any other computer directly or indirectly through the network.</p>
+<p>You are given an initial computer network <code>connections</code>. You can extract certain cables between two directly connected computers, and place them between any pair of disconnected computers to make them directly connected.</p>
+<p>Return <em>the minimum number of times you need to do this in order to make all the computers connected</em>. If it is not possible, return <code>-1</code>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/01/02/sample_1_1677.png" style="width: 500px; height: 148px;" />
+<pre>
+<strong>Input:</strong> n = 4, connections = [[0,1],[0,2],[1,2]]
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> Remove cable between computer 1 and 2 and place between computers 1 and 3.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/01/02/sample_2_1677.png" style="width: 500px; height: 129px;" />
+<pre>
+<strong>Input:</strong> n = 6, connections = [[0,1],[0,2],[0,3],[1,2],[1,3]]
+<strong>Output:</strong> 2
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> n = 6, connections = [[0,1],[0,2],[0,3],[1,2]]
+<strong>Output:</strong> -1
+<strong>Explanation:</strong> There are not enough cables.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= connections.length &lt;= min(n * (n - 1) / 2, 10<sup>5</sup>)</code></li>
+	<li><code>connections[i].length == 2</code></li>
+	<li><code>0 &lt;= a<sub>i</sub>, b<sub>i</sub> &lt; n</code></li>
+	<li><code>a<sub>i</sub> != b<sub>i</sub></code></li>
+	<li>There are no repeated connections.</li>
+	<li>No two computers are connected by more than one cable.</li>
+</ul>
+class Solution {
+public:
+    int makeConnected(int n, vector<vector<int>>& connections) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1492.Time Needed to Inform All Employees</h2><h3>Medium</h3><p>A company has <code>n</code> employees with a unique ID for each employee from <code>0</code> to <code>n - 1</code>. The head of the company is the one with <code>headID</code>.</p>
+<p>Each employee has one direct manager given in the <code>manager</code> array where <code>manager[i]</code> is the direct manager of the <code>i-th</code> employee, <code>manager[headID] = -1</code>. Also, it is guaranteed that the subordination relationships have a tree structure.</p>
+<p>The head of the company wants to inform all the company employees of an urgent piece of news. He will inform his direct subordinates, and they will inform their subordinates, and so on until all employees know about the urgent news.</p>
+<p>The <code>i-th</code> employee needs <code>informTime[i]</code> minutes to inform all of his direct subordinates (i.e., After informTime[i] minutes, all his direct subordinates can start spreading the news).</p>
+<p>Return <em>the number of minutes</em> needed to inform all the employees about the urgent news.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<pre>
+<strong>Input:</strong> n = 1, headID = 0, manager = [-1], informTime = [0]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> The head of the company is the only employee in the company.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/02/27/graph.png" style="width: 404px; height: 174px;" />
+<pre>
+<strong>Input:</strong> n = 6, headID = 2, manager = [2,2,-1,2,2,2], informTime = [0,0,1,0,0,0]
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> The head of the company with id = 2 is the direct manager of all the employees in the company and needs 1 minute to inform them all.
+The tree structure of the employees in the company is shown.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= headID &lt; n</code></li>
+	<li><code>manager.length == n</code></li>
+	<li><code>0 &lt;= manager[i] &lt; n</code></li>
+	<li><code>manager[headID] == -1</code></li>
+	<li><code>informTime.length == n</code></li>
+	<li><code>0 &lt;= informTime[i] &lt;= 1000</code></li>
+	<li><code>informTime[i] == 0</code> if employee <code>i</code> has no subordinates.</li>
+	<li>It is <strong>guaranteed</strong> that all the employees can be informed.</li>
+</ul>
+class Solution {
+public:
+    int numOfMinutes(int n, int headID, vector<int>& manager, vector<int>& informTime) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>2035.Count Sub Islands</h2><h3>Medium</h3><p>You are given two <code>m x n</code> binary matrices <code>grid1</code> and <code>grid2</code> containing only <code>0</code>&#39;s (representing water) and <code>1</code>&#39;s (representing land). An <strong>island</strong> is a group of <code>1</code>&#39;s connected <strong>4-directionally</strong> (horizontal or vertical). Any cells outside of the grid are considered water cells.</p>
+<p>An island in <code>grid2</code> is considered a <strong>sub-island </strong>if there is an island in <code>grid1</code> that contains <strong>all</strong> the cells that make up <strong>this</strong> island in <code>grid2</code>.</p>
+<p>Return the <em><strong>number</strong> of islands in </em><code>grid2</code> <em>that are considered <strong>sub-islands</strong></em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/06/10/test1.png" style="width: 493px; height: 205px;" />
+<pre>
+<strong>Input:</strong> grid1 = [[1,1,1,0,0],[0,1,1,1,1],[0,0,0,0,0],[1,0,0,0,0],[1,1,0,1,1]], grid2 = [[1,1,1,0,0],[0,0,1,1,1],[0,1,0,0,0],[1,0,1,1,0],[0,1,0,1,0]]
+<strong>Output:</strong> 3
+<strong>Explanation: </strong>In the picture above, the grid on the left is grid1 and the grid on the right is grid2.
+The 1s colored red in grid2 are those considered to be part of a sub-island. There are three sub-islands.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/06/03/testcasex2.png" style="width: 491px; height: 201px;" />
+<pre>
+<strong>Input:</strong> grid1 = [[1,0,1,0,1],[1,1,1,1,1],[0,0,0,0,0],[1,1,1,1,1],[1,0,1,0,1]], grid2 = [[0,0,0,0,0],[1,1,1,1,1],[0,1,0,1,0],[0,1,0,1,0],[1,0,0,0,1]]
+<strong>Output:</strong> 2 
+<strong>Explanation: </strong>In the picture above, the grid on the left is grid1 and the grid on the right is grid2.
+The 1s colored red in grid2 are those considered to be part of a sub-island. There are two sub-islands.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>m == grid1.length == grid2.length</code></li>
+	<li><code>n == grid1[i].length == grid2[i].length</code></li>
+	<li><code>1 &lt;= m, n &lt;= 500</code></li>
+	<li><code>grid1[i][j]</code> and <code>grid2[i][j]</code> are either <code>0</code> or <code>1</code>.</li>
+</ul>
+class Solution {
+public:
+    int countSubIslands(vector<vector<int>>& grid1, vector<vector<int>>& grid2) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>2038.Nearest Exit from Entrance in Maze</h2><h3>Medium</h3><p>You are given an <code>m x n</code> matrix <code>maze</code> (<strong>0-indexed</strong>) with empty cells (represented as <code>&#39;.&#39;</code>) and walls (represented as <code>&#39;+&#39;</code>). You are also given the <code>entrance</code> of the maze, where <code>entrance = [entrance<sub>row</sub>, entrance<sub>col</sub>]</code> denotes the row and column of the cell you are initially standing at.</p>
+<p>In one step, you can move one cell <strong>up</strong>, <strong>down</strong>, <strong>left</strong>, or <strong>right</strong>. You cannot step into a cell with a wall, and you cannot step outside the maze. Your goal is to find the <strong>nearest exit</strong> from the <code>entrance</code>. An <strong>exit</strong> is defined as an <strong>empty cell</strong> that is at the <strong>border</strong> of the <code>maze</code>. The <code>entrance</code> <strong>does not count</strong> as an exit.</p>
+<p>Return <em>the <strong>number of steps</strong> in the shortest path from the </em><code>entrance</code><em> to the nearest exit, or </em><code>-1</code><em> if no such path exists</em>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/06/04/nearest1-grid.jpg" style="width: 333px; height: 253px;" />
+<pre>
+<strong>Input:</strong> maze = [[&quot;+&quot;,&quot;+&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;,&quot;.&quot;]], entrance = [1,2]
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> There are 3 exits in this maze at [1,0], [0,2], and [2,3].
+Initially, you are at the entrance cell [1,2].
+- You can reach [1,0] by moving 2 steps left.
+- You can reach [0,2] by moving 1 step up.
+It is impossible to reach [2,3] from the entrance.
+Thus, the nearest exit is [0,2], which is 1 step away.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/06/04/nearesr2-grid.jpg" style="width: 253px; height: 253px;" />
+<pre>
+<strong>Input:</strong> maze = [[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;]], entrance = [1,0]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> There is 1 exit in this maze at [1,2].
+[1,0] does not count as an exit since it is the entrance cell.
+Initially, you are at the entrance cell [1,0].
+- You can reach [1,2] by moving 2 steps right.
+Thus, the nearest exit is [1,2], which is 2 steps away.
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2021/06/04/nearest3-grid.jpg" style="width: 173px; height: 93px;" />
+<pre>
+<strong>Input:</strong> maze = [[&quot;.&quot;,&quot;+&quot;]], entrance = [0,0]
+<strong>Output:</strong> -1
+<strong>Explanation:</strong> There are no exits in this maze.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>maze.length == m</code></li>
+	<li><code>maze[i].length == n</code></li>
+	<li><code>1 &lt;= m, n &lt;= 100</code></li>
+	<li><code>maze[i][j]</code> is either <code>&#39;.&#39;</code> or <code>&#39;+&#39;</code>.</li>
+	<li><code>entrance.length == 2</code></li>
+	<li><code>0 &lt;= entrance<sub>row</sub> &lt; m</code></li>
+	<li><code>0 &lt;= entrance<sub>col</sub> &lt; n</code></li>
+	<li><code>entrance</code> will always be an empty cell.</li>
+</ul>
+class Solution {
+public:
+    int nearestExit(vector<vector<char>>& maze, vector<int>& entrance) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>1117.As Far from Land as Possible</h2><h3>Medium</h3><p>Given an <code>n x n</code> <code>grid</code>&nbsp;containing only values <code>0</code> and <code>1</code>, where&nbsp;<code>0</code> represents water&nbsp;and <code>1</code> represents land, find a water cell such that its distance to the nearest land cell is maximized, and return the distance.&nbsp;If no land or water exists in the grid, return <code>-1</code>.</p>
+<p>The distance used in this problem is the Manhattan distance:&nbsp;the distance between two cells <code>(x0, y0)</code> and <code>(x1, y1)</code> is <code>|x0 - x1| + |y0 - y1|</code>.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/05/03/1336_ex1.JPG" style="width: 185px; height: 87px;" />
+<pre>
+<strong>Input:</strong> grid = [[1,0,1],[0,0,0],[1,0,1]]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> The cell (1, 1) is as far as possible from all the land with distance 2.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/05/03/1336_ex2.JPG" style="width: 184px; height: 87px;" />
+<pre>
+<strong>Input:</strong> grid = [[1,0,0],[0,0,0],[0,0,0]]
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> The cell (2, 2) is as far as possible from all the land with distance 4.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>n == grid.length</code></li>
+	<li><code>n == grid[i].length</code></li>
+	<li><code>1 &lt;= n&nbsp;&lt;= 100</code></li>
+	<li><code>grid[i][j]</code>&nbsp;is <code>0</code> or <code>1</code></li>
+</ul>
+class Solution {
+public:
+    int maxDistance(vector<vector<int>>& grid) {
+        
+    }
+};</div><p style="page-break-before: always" ></p><div><h2>753.Open the Lock</h2><h3>Medium</h3><p>You have a lock in front of you with 4 circular wheels. Each wheel has 10 slots: <code>&#39;0&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;</code>. The wheels can rotate freely and wrap around: for example we can turn <code>&#39;9&#39;</code> to be <code>&#39;0&#39;</code>, or <code>&#39;0&#39;</code> to be <code>&#39;9&#39;</code>. Each move consists of turning one wheel one slot.</p>
+<p>The lock initially starts at <code>&#39;0000&#39;</code>, a string representing the state of the 4 wheels.</p>
+<p>You are given a list of <code>deadends</code> dead ends, meaning if the lock displays any of these codes, the wheels of the lock will stop turning and you will be unable to open it.</p>
+<p>Given a <code>target</code> representing the value of the wheels that will unlock the lock, return the minimum total number of turns required to open the lock, or -1 if it is impossible.</p>
+
+<p><strong class="example">Example 1:</strong></p>
+<pre>
+<strong>Input:</strong> deadends = [&quot;0201&quot;,&quot;0101&quot;,&quot;0102&quot;,&quot;1212&quot;,&quot;2002&quot;], target = &quot;0202&quot;
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> 
+A sequence of valid moves would be &quot;0000&quot; -&gt; &quot;1000&quot; -&gt; &quot;1100&quot; -&gt; &quot;1200&quot; -&gt; &quot;1201&quot; -&gt; &quot;1202&quot; -&gt; &quot;0202&quot;.
+Note that a sequence like &quot;0000&quot; -&gt; &quot;0001&quot; -&gt; &quot;0002&quot; -&gt; &quot;0102&quot; -&gt; &quot;0202&quot; would be invalid,
+because the wheels of the lock become stuck after the display becomes the dead end &quot;0102&quot;.
+</pre>
+<p><strong class="example">Example 2:</strong></p>
+<pre>
+<strong>Input:</strong> deadends = [&quot;8888&quot;], target = &quot;0009&quot;
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> We can turn the last wheel in reverse to move from &quot;0000&quot; -&gt; &quot;0009&quot;.
+</pre>
+<p><strong class="example">Example 3:</strong></p>
+<pre>
+<strong>Input:</strong> deadends = [&quot;8887&quot;,&quot;8889&quot;,&quot;8878&quot;,&quot;8898&quot;,&quot;8788&quot;,&quot;8988&quot;,&quot;7888&quot;,&quot;9888&quot;], target = &quot;8888&quot;
+<strong>Output:</strong> -1
+<strong>Explanation:</strong> We cannot reach the target without getting stuck.
+</pre>
+
+<p><strong>Constraints:</strong></p>
+<ul>
+	<li><code>1 &lt;= deadends.length &lt;= 500</code></li>
+	<li><code>deadends[i].length == 4</code></li>
+	<li><code>target.length == 4</code></li>
+	<li>target <strong>will not be</strong> in the list <code>deadends</code>.</li>
+	<li><code>target</code> and <code>deadends[i]</code> consist of digits only.</li>
+</ul>
+class Solution {
+public:
+    int openLock(vector<string>& deadends, string target) {
+        
+    }
+};</div><p style="page-break-before: always" ></p></div>

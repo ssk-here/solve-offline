@@ -80,3 +80,10 @@ Displaying contents of WEEK3\data\binary-tree-paths_output.txt
 2. Input: [1]
     1
 ```
+
+
+## Repository layout additions
+
+- `NEETCODE/` - NeetCode problem templates (from the old `week-test` repo), built the same way as the `WEEK*` folders.
+- `gtest/` - Google Test based weekly workspace (from `week-test`). See `gtest/README.md`.
+- `leetcode_2024/` - 2024 solutions and the scripts that build printable problem lists (from the old `leetcode_2024` repo, history preserved).

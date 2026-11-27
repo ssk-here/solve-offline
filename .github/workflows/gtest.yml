@@ -1,0 +1,32 @@
+name: GTest build
+
+on:
+  push:
+    paths: ['gtest/**', '.github/workflows/gtest.yml']
+  pull_request:
+    paths: ['gtest/**', '.github/workflows/gtest.yml']
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: gtest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install GTest
+      run: sudo apt-get update && sudo apt-get install -y libgtest-dev
+
+    - name: Build and run sample test
+      run: |
+        chmod +x ./run_app.sh
+        ./run_app.sh WEEK1/best-time-to-buy-and-sell-stock.cpp 2>&1 | tee output.txt
+
+    - name: Upload output as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: application-output
+        path: gtest/output.txt
