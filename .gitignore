@@ -35,3 +35,8 @@ json_data/**
 *.exe
 *.out
 *.app
+
+# gtest build output
+gtest/out/
+gtest/build/
+gtest/output.txt
